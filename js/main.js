@@ -15,17 +15,33 @@
     // Initiate the wowjs
     new WOW().init();
 
+    // $('.navbar').addClass('mt-5');
+
 
     // Sticky Navbar
-    $(window).scroll(function () {
-    if ($(this).scrollTop() > 45) {
-        $('.navbar').addClass('sticky-top shadow-sm');
-        $('.navbar').removeClass('mt-5');
-    } else {
-        $('.navbar').removeClass('sticky-top shadow-sm');
-        $('.navbar').addClass('mt-5');
+
+    $('.navbar').addClass('mt-5');
+
+    if (window.innerWidth <= 900) {
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('sticky-top shadow-sm');
+            $('.navbar').removeClass('mt-5');
+        } else {
+            $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.navbar').removeClass('mt-5');
+        }
     }
-});
+    else{
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('sticky-top shadow-sm');
+            $('.navbar').removeClass('mt-5');
+        } else {
+            $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.navbar').addClass('mt-5');
+        }
+    });
+}
 
     
     // Dropdown on mouse hover

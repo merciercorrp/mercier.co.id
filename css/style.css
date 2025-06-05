@@ -1,3 +1,80 @@
+/* START Add Alif */
+/*        .carousel-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-caption {
+            bottom: 20%;
+        }*/
+
+        .numbered-indicators {
+            position: absolute;
+            left: 200px;
+            bottom: 350px;
+            z-index: 10;
+        }
+
+         .numbered-indicators button {
+        background: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        position: relative;
+        padding: 5px 10px;
+    }
+
+    .numbered-indicators button::after {
+        content: '';
+        display: block;
+        margin-top: 4px;
+        height: 3px;
+        width: 100%;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    .numbered-indicators .active::after {
+        background-color: white;
+    }
+
+    .numbered-indicators .active {
+        color: white;
+    }
+
+    .circle-play-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.circle-play-btn::before {
+    content: "";
+    position: absolute;
+    left: 32px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid #fc0079; /* Biru Bootstrap */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.circle-play-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* END Add Alif */
+
 /********** Template CSS **********/
 :root {
     --primary: #06A3DA;
