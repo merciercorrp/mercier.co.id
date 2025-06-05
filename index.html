@@ -317,7 +317,7 @@
                             </div>
                             <h4>Professional Staff</h4>
                             <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
+                        </div>l
                         <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-phone-alt text-white"></i>
@@ -865,8 +865,6 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
      <script>
         const indicators = document.querySelectorAll('.numbered-indicators button');
         const carousel = document.querySelector('#header-carousel');
@@ -907,9 +905,18 @@
 
 </script>
 
+<script>
+        if (window.innerWidth <= 900) {
+            $('.navbar').removeClass('mt-5');
+
+        } else {
+            // $('.navbar').addClass('mt-0');
+        }
 
 
-    <!-- Template Javascript -->
+</script>
+
+
     <script src="js/main.js"></script>
 </body>
 
