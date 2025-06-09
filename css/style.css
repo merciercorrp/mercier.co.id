@@ -22,7 +22,7 @@
         border: none;
         color: white;
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         position: relative;
         padding: 5px 10px;
     }
@@ -46,32 +46,36 @@
     }
 
     .circle-play-btn {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
 
-.circle-play-btn::before {
-    content: "";
-    position: absolute;
-    left: 32px;
-    top: 30px;
-    width: 0;
-    height: 0;
-    border-left: 40px solid #fc0079; /* Biru Bootstrap */
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+        position: relative;
+        left: 90%;
+        top: 8px;
+    }
 
-.circle-play-btn:hover {
-    background-color: #f0f0f0;
-}
+    .circle-play-btn::before {
+        content: "";
+        position: absolute;
+        left: 32px;
+        top: 30px;
+        width: 0;
+        height: 0;
+        border-left: 40px solid #fc0079; /* Biru Bootstrap */
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+    }
+
+    .circle-play-btn:hover {
+        background-color: #f0f0f0;
+    }
 
 /* END Add Alif */
 
@@ -121,6 +125,26 @@
     }
 }
 
+@font-face {
+    font-family: 'EuclidCircularA';
+    src: url('../fonts/EuclidCircularARegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidCircularA';
+    src: url('../fonts/EuclidCircularABold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Set sebagai font default seluruh body */
+body {
+    font-family: 'EuclidCircularA', sans-serif;
+}
+
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -157,7 +181,7 @@ h6,
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'EuclidCircularA', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -202,7 +226,7 @@ h6,
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'EuclidCircularA', sans-serif;
     position: relative;
     margin-left: 25px;
     padding: 0px 0;
@@ -298,7 +322,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #b9090954;
+    background: #fd7fae;
     z-index: 1;
 }
 
@@ -306,11 +330,13 @@ h6,
     .carousel-caption h5 {
         font-size: 14px;
         font-weight: 500 !important;
+        padding-left: 188px
     }
 
     .carousel-caption h1 {
         font-size: 30px;
         font-weight: 600 !important;
+        padding-left: 188px
     }
 }
 
@@ -334,7 +360,7 @@ h6,
     height: 5px;
     left: 0;
     bottom: 0;
-    background: var(--primary);
+    background: #74c7f0;
     border-radius: 2px;
 }
 
