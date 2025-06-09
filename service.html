@@ -14,7 +14,6 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -78,13 +77,10 @@
             </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="container-fluid bg-primary py-5 bg-header" style=" padding-bottom: 150px !important;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">Services</h1>
-                    <a href="" class="h5 text-white">Home</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h5 text-white">Services</a>
+                    <h1 class="display-4 text-white animated zoomIn">BRANDS</h1>
                 </div>
             </div>
         </div>
@@ -110,9 +106,38 @@
     </div>
     <!-- Full Screen Search End -->
 
+    <section class="py-5">
+        <div class="container my-4">
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- Baris 1 -->
+            <div class="row text-center justify-content-center g-4 mb-3">
+                <div class="col-6 col-md-4"><img class="img-fluid brand-img" src="img/b_mpm-beauty.png" alt="mpm-beauty"></div>
+                <div class="col-6 col-md-4"><img class="img-fluid brand-img" src="img/b_animates.png" alt="animate-skinthetic"></div>
+                <div class="col-6 col-md-4"><img class="img-fluid brand-img" src="img/b_animate.png" alt="animate"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        .brand-img {
+            filter: grayscale(100%);
+            opacity: 0.5;
+            transition: 0.5s ease;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        .brand-img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+
+
+
+    <!-- Service Start DELETE -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
@@ -188,7 +213,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Service End -->
 
 

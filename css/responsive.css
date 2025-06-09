@@ -1,3 +1,16 @@
+.brand-img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.5s ease;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.brand-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 .p3rcss{
 	max-width: 900px; 
 	position: absolute; 
@@ -52,6 +65,11 @@
 
     .circle-play-btn:hover {
         background-color: #f0f0f0;
+    }
+
+    .brand-img{
+        filter: grayscale(0%);
+        opacity: 1;
     }
 }
 
