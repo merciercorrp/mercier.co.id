@@ -360,7 +360,7 @@ h6,
     height: 5px;
     left: 0;
     bottom: 0;
-    background: #74c7f0;
+    background: #1f739d;
     border-radius: 2px;
 }
 
@@ -377,12 +377,12 @@ h6,
 .section-title::after {
     position: absolute;
     content: "";
-    width: 6px;
+    width: 80px;
     height: 5px;
     bottom: 0px;
-    background: #FFFFFF;
-    -webkit-animation: section-title-run 5s infinite linear;
-    animation: section-title-run 5s infinite linear;
+    background: #9f1356;
+    -webkit-animation: section-title-run 10s infinite linear;
+    animation: section-title-run 10s infinite linear;
 }
 
 .section-title.section-title-sm::after {
