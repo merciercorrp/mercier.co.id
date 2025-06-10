@@ -239,7 +239,7 @@ h6,
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 0px 0;
-    color: var(--dark);
+    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -259,14 +259,14 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-dark {
         position: relative;
-        background: #FFFFFF;
+        background: #2fa8e3eb;
     }
 
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.show,
     .sticky-top.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
-        color: var(--dark);
+        color: white;
     }
 
     .navbar-dark .navbar-brand h1 {
@@ -286,7 +286,7 @@ h6,
     
     .sticky-top.navbar-dark {
         position: fixed;
-        background: #FFFFFF;
+        background: #2fa8e3eb;
     }
 
     .navbar-dark .navbar-nav .nav-link::before {
@@ -322,7 +322,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #00000036;
+    background: #2f9ed3;
     z-index: 1;
 }
 

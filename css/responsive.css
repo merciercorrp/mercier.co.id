@@ -17,6 +17,11 @@
 	top: 209px;
 }
 
+.mercier-emp{
+    height: 600px;
+    margin-top: 300px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.p3rcss{
@@ -70,6 +75,11 @@
     .brand-img{
         filter: grayscale(0%);
         opacity: 1;
+    }
+
+    .mercier-emp{
+        height: 1060px;
+        margin-top: 522px;
     }
 }
 
