@@ -27,7 +27,16 @@
             $('.navbar').addClass('sticky-top shadow-sm');
             $('.navbar').removeClass('mt-5');
         } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.navbar').removeClass(' shadow-sm');
+            $('.navbar').removeClass('mt-5');
+        }
+    }
+    else if(window.innerWidth <= 600) {
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('sticky-top shadow-sm');
+            $('.navbar').removeClass('mt-5');
+        } else {
+            $('.navbar').removeClass(' shadow-sm');
             $('.navbar').removeClass('mt-5');
         }
     }

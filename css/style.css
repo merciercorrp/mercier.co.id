@@ -10,10 +10,40 @@
             bottom: 20%;
         }*/
 
-        .parallax-section {
+        .parallax-section1 {
             margin-top: 75px;
             margin-bottom: 75px;
-            background-image: url('../img/carousel-1.jpg'); /* Ganti sesuai path gambar */
+            background-image: url('../img/back_mpm_beauty.jpg'); /* Ganti sesuai path gambar */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-section2 {
+            margin-top: 75px;
+            margin-bottom: 75px;
+            background-image: url('../img/back_animate_klinik.jpg'); /* Ganti sesuai path gambar */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-section3 {
+            margin-top: 75px;
+            margin-bottom: 75px;
+            background-image: url('../img/back_animate.jpg'); /* Ganti sesuai path gambar */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
