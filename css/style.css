@@ -10,6 +10,39 @@
             bottom: 20%;
         }*/
 
+        .parallax-section {
+            margin-top: 75px;
+            margin-bottom: 75px;
+            background-image: url('../img/carousel-1.jpg'); /* Ganti sesuai path gambar */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .parallax-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .parallax-logo {
+            max-width: 300px;
+            height: auto;
+        }
+
+
         .numbered-indicators {
             position: absolute;
             left: 200px;
@@ -244,7 +277,7 @@ h6,
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fc0079;
+    color: #FFF;
 }
 
 .navbar-dark .navbar-brand h1 {
@@ -296,7 +329,7 @@ h6,
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--primary);
+        background: #ffffff;
         transition: .5s;
     }
 
@@ -322,7 +355,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2f9ed3;
+    background: ;
     z-index: 1;
 }
 
@@ -334,7 +367,7 @@ h6,
     }
 
     .carousel-caption h1 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 600 !important;
         padding-left: 188px
     }
@@ -552,10 +585,10 @@ h6,
     transition: .5s;
 }
 
-.team-item:hover .team-img img,
+/*.team-item:hover .team-img img,
 .blog-item:hover .blog-img img {
     transform: scale(1.15);
-}
+}*/
 
 
 /*** Miscellaneous ***/
@@ -576,7 +609,7 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), #fd7fae), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), #3b3b3b54), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 

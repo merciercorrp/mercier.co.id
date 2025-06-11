@@ -1,15 +1,4 @@
-.brand-img {
-    filter: grayscale(100%);
-    opacity: 0.5;
-    transition: 0.5s ease;
-    max-height: 100px;
-    object-fit: contain;
-}
 
-.brand-img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
-}
 
 .p3rcss{
 	max-width: 900px; 
@@ -22,20 +11,73 @@
     margin-top: 300px;
 }
 
+.mMarginPaddingMercierS{
+    padding-bottom: 150px !important;
+    margin-top: 0px;
+}
+
+.mMarginPaddingMercier{
+    margin-top: 0px;
+}
+
+/* Service.html */
+
+
+.brand-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    max-height: 130px;
+}
+
+.brand-img:hover {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.10s ease;
+    max-height: 130px;
+    object-fit: contain;
+}
+
+a.brook-btn.btn-sd-size, button.brook-btn.btn-sd-size {
+    padding: 0 36px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 14px;
+}
+
+a.brook-btn.btn-rounded, button.brook-btn.btn-rounded {
+    border-radius: 6px;
+}
+
+a.brook-btn.bk-btn-border-animate, button.brook-btn.bk-btn-border-animate {
+    background: #fff;
+    border: 2px solid #38a8dd;
+    color: #38a8dd;
+}
+
+button.brook-btn.bk-btn-border-animate:hover{
+    background: #38a8dd;
+    border: 2px solid #38a8dd;
+    color: #fff;
+}
+
+.colorBlueMercier{
+    color: #38a8dd
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.p3rcss{
 		max-width: 900px; 
 		position: absolute; 
-		top: 45px;
-        left: -145px;
+		top: 21px;
+        left: -164px;
 	}
 
 	.numbered-indicators {
 	    position: absolute;
-	    left: 50px;
-	    bottom: 31px;
-	    z-index: 10;
+	    left: 33px;
+        bottom: 31px;
+        z-index: 10;
     }
 
     .circle-play-btn {
@@ -80,6 +122,27 @@
     .mercier-emp{
         height: 1060px;
         margin-top: 522px;
+    }
+
+    .navbar{
+        background: #2fa8e3eb;
+    }
+
+    .navbar-dark {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .mMarginPaddingMercierS {
+        padding-bottom: 150px !important;
+        margin-top: 110px;
+    }
+
+    .mMarginPaddingMercier {
+        margin-top: 110px;
     }
 }
 
@@ -263,8 +326,8 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s ease;
         position: relative; 
-        left: 180%; 
-        top: 285px;
+        left: 152%;
+        top: 239px;
     }
 
     .circle-play-btn::before {
@@ -290,6 +353,8 @@
 
     .carousel-caption h1 {
         
-        padding-left: 333px
+        padding-left: 333px;
+        font-size: 61px;
+
     }
 }
