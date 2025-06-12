@@ -64,6 +64,16 @@ button.brook-btn.bk-btn-border-animate:hover{
     color: #38a8dd
 }
 
+.envMercier{
+    text-align: left; padding: 50px 600px 50px 150px;
+}
+
+.pContentMercier{
+    position: relative;
+    z-index: 2;
+    margin-left: 180px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.p3rcss{
@@ -143,6 +153,16 @@ button.brook-btn.bk-btn-border-animate:hover{
 
     .mMarginPaddingMercier {
         margin-top: 110px;
+    }
+
+    .envMercier{
+        text-align: left; padding: 0px 0px 0px 0px;
+    }
+
+    .pContentMercier{
+        position: relative;
+        z-index: 2;
+        margin-left: 20px;
     }
 }
 
