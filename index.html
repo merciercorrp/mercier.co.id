@@ -81,9 +81,14 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="aboutus.html" class="nav-item nav-link">About Us</a>
                     <a href="brand.html" class="nav-item nav-link">Brand</a>
-                    <a href="activity.html" class="nav-item nav-link">Activity</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Activity</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="activity.html" class="dropdown-item">CSR</a>
+                            <a href="activity.html" class="dropdown-item">Kegiatan</a>
+                        </div>
+                    </div>
                     <a href="career.html" class="nav-item nav-link">Career</a>
-                    <a href="#" class="nav-item nav-link" disable>News</a>
                 </div>
                 <!-- <div class="navbar-nav py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
@@ -318,7 +323,7 @@
     </div>
     <!-- Facts Start -->
 
-    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 300px;">
+<!--     <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 300px;">
         <div class="container my-4">
 
            
@@ -329,11 +334,244 @@
             </div>
 
         </div>
+    </section> -->
+
+    <style>
+    .brand-row {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /*gap: 20px;*/
+        overflow: hidden;
+        z-index: 1;
+        background-image: url('img/back_mpm_beauty.jpg');
+    }
+
+    .brand-row::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 0.6s ease, height 0.6s ease;
+        z-index: 0;
+    }
+
+    .brand-row.active::before {
+        height: 100%;
+        opacity: 1;
+    }
+
+    .brand-card {
+        position: relative;
+        width: 33.33%;
+        height: 660px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /*border-radius: 12px;*/
+        z-index: 2;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .brand-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+        z-index: 1;
+    }
+
+    .brand-card:hover .brand-overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .brand-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 20px;
+    }
+
+    .brand-content a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 16px;
+        background-color: #ffffff;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .brand-card:hover .brand-content a {
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .brand-card {
+            width: 100%;
+        }
+    }
+</style>
+
+<section style="padding-bottom: 5rem; padding-top: 3rem; background: #a0ddf6; height: 650px; border-radius: 0px 100px 0px 00px;">
+    <div class="container my-4">
+        <div class="brand-row" id="brandRow" onmouseleave="resetBackground()">
+            <!-- Brand 1 -->
+            <div class="brand-card"
+                 onmouseenter="setBackground('img/back_mpm_beauty.jpg')">
+                <div class="brand-overlay"></div>
+                <div class="brand-content">
+                    <h3><img class="img-fluid brand-img" src="img/b_mpm-beauty.png" alt="mpm-beauty" style="width: 50%"></h3>
+                    <p>Halal beauty innovation with modern quality and style.</p>
+                     <a href="#">View More</a>
+                </div>
+            </div>
+
+            <!-- Brand 2 -->
+            <div class="brand-card"
+                 onmouseenter="setBackground('img/back_animate_klinik.jpg')">
+                <div class="brand-overlay"></div>
+                <div class="brand-content">
+                    <h3><img class="img-fluid brand-img" src="img/b_animates_white.png" alt="animate-skinthetic" style="width: 50%"></h3>
+                    <p>Adapts to your skin’s rhythm with natural ingredients.</p>
+                     <a href="#">View More</a>
+                </div>
+            </div>
+
+            <!-- Brand 3 -->
+            <div class="brand-card"
+                 onmouseenter="setBackground('img/back_animate.jpg')">
+                <div class="brand-overlay"></div>
+                <div class="brand-content">
+                    <h3><img class="img-fluid brand-img" src="img/b_animate.png" alt="animate" style="width: 50%"></h3>
+                    <p>Everyday beauty tools for everyday confidence.</p>
+                     <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const brandRow = document.getElementById('brandRow');
+
+    function setBackground(imageUrl) {
+        brandRow.style.backgroundImage = `url(${imageUrl})`;
+
+        // Hide each card's individual background when hovering
+        const cards = brandRow.querySelectorAll('.brand-card');
+        cards.forEach(card => {
+            card.style.backgroundImage = 'none';
+        });
+    }
+
+    function resetBackground() {
+        // Remove background on full row
+        brandRow.style.backgroundImage = '';
+
+        // Reset each card's own background
+        const cards = brandRow.querySelectorAll('.brand-card');
+        // cards[0].style.backgroundImage = "url('img/back_mpm_beauty.jpg')";
+        // cards[1].style.backgroundImage = "url('img/back_animate_klinik.jpg')";
+        // cards[2].style.backgroundImage = "url('img/back_animate.jpg')";
+    }
+</script>
+
+    <style>
+        .carousel-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 20s linear infinite;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        .carousel-track img {
+            max-height: 120px;
+            margin: 0 30px;
+            transition: transform 0.3s;
+        }
+
+        .carousel-track img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-track img {
+                max-height: 80px;
+                margin: 0 15px;
+            }
+        }
+    </style>
+
+    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 0px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp; background: #74c7f0;     padding-top: 8rem !important;
+    padding-bottom: 3rem !important;">
+        <div class="container my-4">
+            <div class="section-title text-center position-relative pb-5 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Mercier Awards</h5>
+                <h1 class="mb-0">Our Achievement</h1>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <img src="img/awards/Awards_best-CEO_2024.jpg" alt="Award 1">
+                    <img src="img/awards/Awards_inspiring-woman_2024.jpg" alt="Award 2">
+                    <img src="img/awards/Awards_JawaPos_2024.png" alt="Award 3">
+                    <img src="img/awards/Awards_JNT_2024.jpg" alt="Award 4">
+                    <img src="img/awards/Awards_Marketeers_2024.png" alt="Award 5">
+                    <img src="img/awards/Awards_MegaSale_2022.png" alt="Award 6">
+                    <img src="img/awards/Awards_Sertifikat-IBSB-2024_Animate-(Beauty-Package).png" alt="Award 7">
+                    <img src="img/awards/Awards_TikTok_2024.png" alt="Award 8">
+
+                    <!-- Duplikat agar looping lebih halus -->
+                    <img src="img/awards/Awards_best-CEO_2024.jpg" alt="Award 1">
+                    <img src="img/awards/Awards_inspiring-woman_2024.jpg" alt="Award 2">
+                    <img src="img/awards/Awards_JawaPos_2024.png" alt="Award 3">
+                    <img src="img/awards/Awards_JNT_2024.jpg" alt="Award 4">
+                    <img src="img/awards/Awards_Marketeers_2024.png" alt="Award 5">
+                    <img src="img/awards/Awards_MegaSale_2022.png" alt="Award 6">
+                    <img src="img/awards/Awards_Sertifikat-IBSB-2024_Animate-(Beauty-Package).png" alt="Award 7">
+                    <img src="img/awards/Awards_TikTok_2024.png" alt="Award 8">
+
+                </div>
+            </div>
+        </div>
     </section>
 
-
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background: #ff5f9d94;">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
@@ -433,69 +671,78 @@
                 <div class="col-lg-12">
                     <div class="row g-5">
                         <div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
-                            <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
-                                <div class="blog-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src="img/blog-1.jpg" alt="">
-                                </div>
-                                <div class="p-4">
-                                    <div class="d-flex mb-3">
-                                        <small>28 Jan, 2025</small>
+                            <a href="blog_detail-4.html">
+                                <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/news/news-4.jpeg" alt="">
                                     </div>
-                                    <h4 class="mb-3">Animate Raih Penghargaan Indonesia Best Selling Brand in E-Commerce Market 2024 dari Majalah SWA</h4>
-                                    
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small>28 Januari, 2025</small>
+                                        </div>
+                                        <h4 class="mb-3" style="font-size: 20px;">Animate Raih Penghargaan Indonesia Best Selling Brand in E-Commerce Market 2024 dari Majalah SWA</h4>
+                                        
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-3 wow slideInUp" data-wow-delay="0.6s">
-                            <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
-                                <div class="blog-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src="img/blog-2.jpg" alt="">
-                                    
-                                </div>
-                                <div class="p-4">
-                                    <div class="d-flex mb-3">
-                                        <small>28 Okt, 2024</small>
+                            <a href="blog_detail-3.html">
+                                <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/news/news-3.jpg" alt="">
+                                        
                                     </div>
-                                    <h4 class="mb-3">Brand Animate Hadir di Jakarta Fair 2024: Promo Spesial dan Hadiah Menarik</h4>
-                                    
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small>28 Oktober, 2024</small>
+                                        </div>
+                                        <h4 class="mb-3" style="font-size: 20px;">Brand Animate Hadir di Jakarta Fair 2024: Promo Spesial dan Hadiah Menarik</h4>
+                                        
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
-                            <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
-                                <div class="blog-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src="img/blog-3.jpg" alt="">
-                                    
-                                </div>
-                                <div class="p-4">
-                                    <div class="d-flex mb-3">
-                                        <small>28 Jan, 2024</small>
+                            <a href="blog_detail-2.html">
+                                <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/news/news-2.jpg" alt="">
+                                        
                                     </div>
-                                    <h4 class="mb-3"> Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                                    
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small>28 Oktober, 2024</small>
+                                        </div>
+                                        <h4 class="mb-3" style="font-size: 20px;">Yunna Mercier dan Michael Mercier Berhasil Raih Kemenangan di Kuis Family 100</h4>
+                                        
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
-                            <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
-                                <div class="blog-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src="img/blog-3.jpg" alt="">
-                                    
-                                </div>
-                                <div class="p-4">
-                                    <div class="d-flex mb-3">
-                                        <small>28 Okt, 2024</small>
+                            <a href="blog_detail-1.html">
+                                <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/news/news-1.jpg" alt="">
+                                        
                                     </div>
-                                    <h4 class="mb-3">Yunna Mercier dan Michael Mercier Berhasil Raih Kemenangan di Kuis Family 100</h4>
-                                    
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small>27 Juni, 2024</small>
+                                        </div>
+                                        <h4 class="mb-3" style="font-size: 20px;">Animate Meraih Penghargaan Marketeers Brand of the Year 2024</h4>
+                                        
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Blog End -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
