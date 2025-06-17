@@ -61,7 +61,9 @@ button.brook-btn.bk-btn-border-animate:hover{
 }
 
 .colorBlueMercier{
-    color: #38a8dd
+    color: #ff5f9d;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .envMercier{
