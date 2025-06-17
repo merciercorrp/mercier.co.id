@@ -74,6 +74,23 @@ button.brook-btn.bk-btn-border-animate:hover{
     margin-left: 180px;
 }
 
+.textBlogDetail{
+    position: relative;
+    top: -402px;
+    background: white;
+    z-index: 99;
+    padding: 100px;
+}
+
+.fontsh2About{
+        font-size: 60px;
+    }
+
+    .fontpAbout{
+        font-size: 1rem;
+    }
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.p3rcss{
@@ -164,10 +181,43 @@ button.brook-btn.bk-btn-border-animate:hover{
         z-index: 2;
         margin-left: 20px;
     }
+
+    .marginTopMercier {
+        
+        margin-top: 0px;
+    }
+
+    .textBlogDetail{
+        position: relative;
+        top: -402px;
+        background: white;
+        z-index: 99;
+        padding: 50px;
+    }
+
+    .fontsh2About{
+        font-size: 12px;
+    }
+
+    .fontpAbout{
+        font-size: 9px;
+    }
+
+    
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    .textBlogDetail{
+        position: relative;
+        top: -402px;
+        background: white;
+        z-index: 99;
+        padding: 50px;
+    }
+
 	.p3rcss{
 		max-width: 900px; 
 		position: absolute; 
@@ -216,10 +266,21 @@ button.brook-btn.bk-btn-border-animate:hover{
     .circle-play-btn:hover {
         background-color: #f0f0f0;
     }
-}
+
+    .marginTopMercier {
+        
+        margin-top: 35px;
+    }
+
+    
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    .marginTopMercier {
+        margin-top: 35px;
+    }
+
 	.p3rcss{
 		max-width: 900px; 
 		position: absolute; 
