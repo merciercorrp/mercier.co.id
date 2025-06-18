@@ -599,7 +599,7 @@ h6,
     align-items: center;
     justify-content: center;
     transition: .5s;
-    background: #0000004f;
+    background: #0000009e;
 }
 
 .desc{
@@ -617,7 +617,7 @@ h6,
 .jobsHover{
     border-radius: 20px; 
     padding: 5px 30px; 
-    background: #00789a; 
+    background: #ff5f9d; 
     border: 1px solid #00789a; 
     color: white;
 }
@@ -642,7 +642,7 @@ h6,
 }
 
 .team-item:hover .team-social {
-    background: #06a3da47;
+    background: #0000004f;
     border: 5px solid #004053;
 
 }
