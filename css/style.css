@@ -13,7 +13,7 @@
         .parallax-section1 {
             margin-top: 75px;
             margin-bottom: 75px;
-            background-image: url('../img/back_mpm_beauty.jpg'); /* Ganti sesuai path gambar */
+            background-image: url('../img/backbrand/body-brand-MPM.jpg'); /* Ganti sesuai path gambar */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -28,7 +28,7 @@
         .parallax-section2 {
             margin-top: 75px;
             margin-bottom: 75px;
-            background-image: url('../img/back_animate_klinik.jpg'); /* Ganti sesuai path gambar */
+            background-image: url('../img/backbrand/body-brand-CLINIC.jpg'); /* Ganti sesuai path gambar */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -43,7 +43,7 @@
         .parallax-section3 {
             margin-top: 75px;
             margin-bottom: 75px;
-            background-image: url('../img/back_animate.jpg'); /* Ganti sesuai path gambar */
+            background-image: url('../img/backbrand/body-brand-banner.jpg'); /* Ganti sesuai path gambar */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
