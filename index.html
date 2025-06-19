@@ -341,7 +341,6 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        /*gap: 20px;*/
         overflow: hidden;
         z-index: 1;
         background-image: url('img/backbrand/body-brand-MPM.jpg');
@@ -423,14 +422,63 @@
         opacity: 1;
     }
 
+    .mercierProduct{
+        padding-bottom: 5rem; 
+        padding-top: 3rem; 
+        background: #74c7f0; 
+        height: 600px; 
+        border-radius: 0px 100px 0px 00px;
+    }
+
     @media (max-width: 768px) {
+        .brand-row {
+            flex-direction: column;
+            background-size: cover;
+        }
+
         .brand-card {
             width: 100%;
+            height: auto;
+            min-height: 200px;
+        }
+
+        .brand-content {
+            top: auto;
+            transform: none;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brand-content h3 img {
+            width: 60% !important;
+        }
+
+        .brand-content p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .brand-content a {
+            font-size: 0.9rem;
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+
+        .mercierProduct{
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+            background: #74c7f0;
+            height: 990px;
+            border-radius: 0px 0px 0px 0px;
         }
     }
+}
 </style>
 
-<section style="padding-bottom: 5rem; padding-top: 3rem; background: #74c7f0; height: 600px; border-radius: 0px 100px 0px 00px;">
+<section class="mercierProduct">
     <div class="container my-4">
         <div class="brand-row" id="brandRow" onmouseleave="resetBackground()">
             <!-- Brand 1 -->
@@ -438,7 +486,7 @@
                  onmouseenter="setBackground('img/backbrand/body-brand-MPM.jpg')">
                 <div class="brand-overlay"></div>
                 <div class="brand-content">
-                    <h3><img class="img-fluid brand-img" src="img/b_mpm-beauty.png" alt="mpm-beauty" style="width: 50%"></h3>
+                    <h3><img class="img-fluid brand-img" src="img/b_mpm-beauty.png" alt="mpm-beauty" style="width: 55%"></h3>
                     <p>Halal beauty innovation with modern quality and style.</p>
                      <a href="#">View More</a>
                 </div>
@@ -824,9 +872,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <h5 class="text-light mb-0">Follow us on</h5>
                             </div>
                             <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-tiktok fw-normal"></i></a> 
+                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/mercier-corp/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/lifeatmercier/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://www.tiktok.com/@lifeatmercier" target="_blank"><i class="fab fa-tiktok fw-normal"></i></a> 
                             </div>
                         </div>
                     </div>
