@@ -163,15 +163,17 @@ button.brook-btn.bk-btn-border-animate:hover{
         top: 0;
         left: 0;
         z-index: 999;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
     }
 
     .mMarginPaddingMercierS {
         padding-bottom: 150px !important;
-        margin-top: 110px;
+        margin-top: 70px;
     }
 
     .mMarginPaddingMercier {
-        margin-top: 110px;
+        margin-top: 70px;
     }
 
     .envMercier{
