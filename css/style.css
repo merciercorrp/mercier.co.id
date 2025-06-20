@@ -333,6 +333,7 @@ h6,
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 0px 0;
     color: white;
+    background: #ff5f9deb;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
