@@ -1,11 +1,18 @@
-.navbar {
+    .navbar-dark {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
         background: transparent;
     }
 
 .p3rcss{
-	max-width: 900px; 
-	position: absolute; 
-	top: 209px;
+    max-width: 900px; 
+    position: absolute; 
+    top: 209px;
 }
 
 .mercier-emp{
@@ -97,24 +104,24 @@ button.brook-btn.bk-btn-border-animate:hover{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.p3rcss{
-		max-width: 900px; 
-		position: absolute; 
-		top: 21px;
+    .p3rcss{
+        max-width: 900px; 
+        position: absolute; 
+        top: 21px;
         left: -164px;
-	}
+    }
 
-	.numbered-indicators {
-	    position: absolute;
-	    left: 33px;
+    .numbered-indicators {
+        position: absolute;
+        left: 33px;
         bottom: 31px;
         z-index: 10;
     }
 
     .circle-play-btn {
         position: relative;
-	    left: 90%;
-	    top: 8px;
+        left: 90%;
+        top: 8px;
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -155,9 +162,6 @@ button.brook-btn.bk-btn-border-animate:hover{
         margin-top: 522px;
     }
 
-    .navbar{
-        background: #ff5f9d;
-    }
 
     .navbar-dark {
         position: fixed;
@@ -167,6 +171,7 @@ button.brook-btn.bk-btn-border-animate:hover{
         z-index: 999;
         padding-top: 0px !important;
         padding-bottom: 0px !important;
+        background: #ff5f9d;
     }
 
     .mMarginPaddingMercierS {
@@ -222,9 +227,7 @@ button.brook-btn.bk-btn-border-animate:hover{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-    .navbar {
-        background: #ff5f9d;
-    }
+   
 
     .textBlogDetail {
         position: relative;
@@ -234,23 +237,23 @@ button.brook-btn.bk-btn-border-animate:hover{
         padding: 50px;
     }
 
-	.p3rcss {
-		max-width: 900px; 
-		position: absolute; 
-		top: 45px;
+    .p3rcss {
+        max-width: 900px; 
+        position: absolute; 
+        top: 45px;
         left: -145px;
-	}
+    }
 
     .carousel-caption h1 {
         padding-left: 181px;
         font-size: 30px;
     }
 
-	.numbered-indicators {
-	    position: absolute;
-	    left: 50px;
-	    bottom: 31px;
-	    z-index: 10;
+    .numbered-indicators {
+        position: absolute;
+        left: 50px;
+        bottom: 31px;
+        z-index: 10;
     }
 
     .circle-play-btn {
@@ -298,6 +301,17 @@ button.brook-btn.bk-btn-border-animate:hover{
         font-weight: 600 !important;
         padding-left: 188px;
     }
+
+    .navbar-dark {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        background: #ff5f9d;
+    }
 }
 
     
@@ -305,25 +319,21 @@ button.brook-btn.bk-btn-border-animate:hover{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .navbar {
-        background: transparent;
-    }
-
     .marginTopMercier {
         margin-top: 0px;
     }
 
-	    .p3rcss {
+        .p3rcss {
         max-width: 900px;
         position: absolute;
         top: 74px;
     }
 
-	.numbered-indicators {
-	    position: absolute;
-	    left: 50px;
-	    bottom: 31px;
-	    z-index: 10;
+    .numbered-indicators {
+        position: absolute;
+        left: 50px;
+        bottom: 31px;
+        z-index: 10;
     }
 
     .circle-play-btn {
@@ -373,21 +383,32 @@ button.brook-btn.bk-btn-border-animate:hover{
         font-size: 30px;
 
     }
+
+    .navbar-dark {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        background: transparent;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	.p3rcss{
-		max-width: 900px; 
-		position: absolute; 
-		top: 209px;
-	}
+    .p3rcss{
+        max-width: 900px; 
+        position: absolute; 
+        top: 209px;
+    }
 
-	.numbered-indicators {
-	    position: absolute;
-	    left: 50px;
-	    bottom: 31px;
-	    z-index: 10;
+    .numbered-indicators {
+        position: absolute;
+        left: 50px;
+        bottom: 31px;
+        z-index: 10;
     }
 
     .circle-play-btn {
@@ -428,13 +449,13 @@ button.brook-btn.bk-btn-border-animate:hover{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	.p3rcss{
-		max-width: 900px; 
-		position: absolute; 
-		top: 209px;
-	}
+    .p3rcss{
+        max-width: 900px; 
+        position: absolute; 
+        top: 209px;
+    }
 
-	.numbered-indicators {
+    .numbered-indicators {
         position: absolute;
         left: 200px;
         bottom: 305px;

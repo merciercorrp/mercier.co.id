@@ -10,7 +10,7 @@
             bottom: 20%;
         }*/
 
-   
+
         .parallax-section1 {
             margin-top: 75px;
             margin-bottom: 75px;
@@ -353,7 +353,7 @@ h6,
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-dark {
-        position: relative;
+        position: fixed;
         background: #ff5f9deb;
     }
 
