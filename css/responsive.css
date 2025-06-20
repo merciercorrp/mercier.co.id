@@ -1,6 +1,4 @@
-.navbar {
-    background: transparent;
-}
+
 
 .p3rcss{
 	max-width: 900px; 
@@ -306,7 +304,7 @@ button.brook-btn.bk-btn-border-animate:hover{
 @media only screen and (min-width: 768px) {
 
     .navbar {
-        background: #ff5f9d;
+        background: transparent;
     }
 
     .marginTopMercier {
