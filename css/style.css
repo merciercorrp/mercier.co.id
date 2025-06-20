@@ -374,8 +374,8 @@ h6,
         width: 100%;
         top: 0;
         left: 0;
-
         z-index: 999;
+        background: transparent;
     }
     
     .sticky-top.navbar-dark {
