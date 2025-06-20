@@ -82,9 +82,82 @@
 
         <div class="container-fluid bg-primary py-5 mMarginPaddingMercierS" style="    background: linear-gradient(#0000006b, #0000006b, #0000006b, #ff5f9d75), url(img/banner/BANNER-2.jpg) center center no-repeat;
     background-size: cover; padding-bottom: 0px !important; height: 600px;">
+
+    <style>
+        .section-title.text-center::after
+         {
+            -webkit-animation: section-title-run-center 5s infinite linear !important;
+            animation: section-title-run-center 0s infinite linear !important;
+        }
+
+        .section-title::after {
+            display: none;
+        }
+
+        .section-title::before {
+            display: none;
+        }
+        .section-title {
+            overflow: hidden;
+        }
+
+        .text-animate {
+            color: #ff5f9d;
+            position: relative;
+            z-index: 2;
+        }
+
+        .underline-animate {
+            height: 10px;
+            background-color: #ff5f9d;
+            width: 1%;
+            margin: 10px auto;
+            animation: underlineSlide 10s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .title-animate {
+            color: #ff5f9d;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInTitle 0.6s forwards;
+            animation-delay: 0.5s; /* after underline animation ends */
+        }
+
+        /* Animasi garis bawah */
+        @keyframes underlineSlide {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Animasi tampil Mercier Corp */
+        @keyframes fadeInTitle {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .underline-animate {
+            animation: underlineSlide 1s forwards, hideLine 0.3s forwards;
+            animation-delay: 0.3s, 1.3s;
+        }
+
+        @keyframes hideLine {
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+
             <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">CAREER</h1>
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center section-title">
+                    <h1 class="display-4 text-white animated zoomIn title-animate">CAREER</h1>
+                    <div class="underline-animate"></div>
                 </div>
             </div>
         </div>
@@ -222,6 +295,82 @@
                             <div class="team-social" style="text-align: center;">
                                 <div class="desc">
                                 <h5 style="color: white;">Digital Marketing</h5>
+                                    <br>
+                                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a> -->
+                                    <button class="btn-sm jobsHover">0 Jobs</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow slideInUp" data-wow-delay="0.3s">
+                    <a href="career_detail.html" target="_blank">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Career/HOUSE-LIVE.jpg" alt="">
+                            <div class="team-social" style="text-align: center;">
+                                <div class="desc">
+                                <h5 style="color: white;">House Live</h5>
+                                    <br>
+                                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a> -->
+                                    <button class="btn-sm jobsHover">0 Jobs</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow slideInUp" data-wow-delay="0.3s">
+                    <a href="career_detail.html" target="_blank">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Career/HUMAN-RESOURCE-AND-RECRUITMENT.jpg" alt="">
+                            <div class="team-social" style="text-align: center;">
+                                <div class="desc">
+                                <h5 style="color: white;">Human Resource and Recruitment</h5>
+                                    <br>
+                                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a> -->
+                                    <button class="btn-sm jobsHover">0 Jobs</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow slideInUp" data-wow-delay="0.3s">
+                    <a href="career_detail.html" target="_blank">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Career/PRODUCT-DEVELOPMENT.jpg" alt="">
+                            <div class="team-social" style="text-align: center;">
+                                <div class="desc">
+                                <h5 style="color: white;">Product Development</h5>
+                                    <br>
+                                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a> -->
+                                    <button class="btn-sm jobsHover">0 Jobs</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow slideInUp" data-wow-delay="0.3s">
+                    <a href="career_detail.html" target="_blank">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Career/PURCHASING.jpg" alt="">
+                            <div class="team-social" style="text-align: center;">
+                                <div class="desc">
+                                <h5 style="color: white;">PURCHASING</h5>
                                     <br>
                                     <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a> -->
                                     <button class="btn-sm jobsHover">0 Jobs</button>

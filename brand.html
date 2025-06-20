@@ -74,10 +74,83 @@
             </div>
         </nav>
 
+    <style>
+        .section-title.text-center::after
+         {
+            -webkit-animation: section-title-run-center 5s infinite linear !important;
+            animation: section-title-run-center 0s infinite linear !important;
+        }
+
+        .section-title::after {
+            display: none;
+        }
+
+        .section-title::before {
+            display: none;
+        }
+
+        .section-title {
+            overflow: hidden;
+        }
+
+        .text-animate {
+            color: #ff5f9d;
+            position: relative;
+            z-index: 2;
+        }
+
+        .underline-animate {
+            height: 10px;
+            background-color: #ff5f9d;
+            width: 1%;
+            margin: 10px auto;
+            animation: underlineSlide 10s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .title-animate {
+            color: #ff5f9d;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInTitle 0.6s forwards;
+            animation-delay: 0.5s; /* after underline animation ends */
+        }
+
+        /* Animasi garis bawah */
+        @keyframes underlineSlide {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Animasi tampil Mercier Corp */
+        @keyframes fadeInTitle {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .underline-animate {
+            animation: underlineSlide 1s forwards, hideLine 0.3s forwards;
+            animation-delay: 0.3s, 1.3s;
+        }
+
+        @keyframes hideLine {
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+
         <div class="container-fluid bg-primary py-5 bg-header mMarginPaddingMercierS">
             <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">BRANDS</h1>
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center section-title">
+                    <h1 class="display-4 text-white animated zoomIn title-animate">BRANDS</h1>
+                    <div class="underline-animate"></div>
                 </div>
             </div>
         </div>
