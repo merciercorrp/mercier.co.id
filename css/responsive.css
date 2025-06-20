@@ -123,8 +123,8 @@ button.brook-btn.bk-btn-border-animate:hover{
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s ease;
         position: relative;
-        left: 90%;
-        top: 8px;
+        left: 55%;
+        top: 65px;
     }
 
     .circle-play-btn::before {
@@ -207,6 +207,12 @@ button.brook-btn.bk-btn-border-animate:hover{
         font-size: 9px;
     }
 
+    .carousel-caption h1 {
+        font-size: 16px;
+        font-weight: 600 !important;
+        padding-left: 188px;
+    }
+
     
 
 }
@@ -214,7 +220,11 @@ button.brook-btn.bk-btn-border-animate:hover{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-    .textBlogDetail{
+    .navbar {
+        background: #ff5f9d;
+    }
+
+    .textBlogDetail {
         position: relative;
         top: -402px;
         background: white;
@@ -222,12 +232,17 @@ button.brook-btn.bk-btn-border-animate:hover{
         padding: 50px;
     }
 
-	.p3rcss{
+	.p3rcss {
 		max-width: 900px; 
 		position: absolute; 
 		top: 45px;
         left: -145px;
 	}
+
+    .carousel-caption h1 {
+        padding-left: 181px;
+        font-size: 30px;
+    }
 
 	.numbered-indicators {
 	    position: absolute;
@@ -251,8 +266,8 @@ button.brook-btn.bk-btn-border-animate:hover{
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s ease;
         position: relative;
-        left: 90%;
-        top: 8px;
+        left: 60%;
+        top: 153px;
     }
 
     .circle-play-btn::before {
@@ -274,6 +289,12 @@ button.brook-btn.bk-btn-border-animate:hover{
     .marginTopMercier {
         
         margin-top: 35px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px;
+        font-weight: 600 !important;
+        padding-left: 188px;
     }
 }
 
