@@ -346,6 +346,24 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let btns = document.querySelectorAll('.team-social');
+            btns.forEach(function(btn){
+                const spans = [];
+                for(let i=0;i<134;i++){
+                let span = document.createElement('span');
+                span.style.top = `${i * 2}px`;
+                spans.push(span);
+                btn.appendChild(span);
+
+                let randomDelay = (Math.random() * 0.75) + 0;
+                span.style.transitionDelay = randomDelay+'s';
+            }
+
+            })
+        })
+    </script>
 </body>
 
 </html>

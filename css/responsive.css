@@ -411,8 +411,8 @@ button.brook-btn.bk-btn-border-animate:hover{
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s ease;
         position: relative; 
-        left: 152%;
-        top: 239px;
+        left: 86%;
+        top: 153px;
     }
 
     .circle-play-btn::before {
@@ -439,7 +439,7 @@ button.brook-btn.bk-btn-border-animate:hover{
     .carousel-caption h1 {
         
         padding-left: 333px;
-        font-size: 60px;
+        font-size: 40px;
 
     }
 }
