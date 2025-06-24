@@ -90,12 +90,12 @@
         .parallaxMercierActivityAboutUs{
             margin-top: 0px;
             margin-bottom: 0px;
-            background-image: url(../img/back_animate_klinik.jpg);
+            background: #ff5f9d;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            min-height: 400px;
+            min-height: 200px;
             position: relative;
             display: flex;
             align-items: center;

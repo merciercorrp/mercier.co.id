@@ -312,6 +312,11 @@ button.brook-btn.bk-btn-border-animate:hover{
         padding-bottom: 0px !important;
         background: #ff5f9d;
     }
+
+    .envMercier {
+        text-align: left;
+        padding: 50px 0px 50px 0px;
+    }
 }
 
     
@@ -394,6 +399,11 @@ button.brook-btn.bk-btn-border-animate:hover{
         padding-bottom: 0px !important;
         background: transparent;
     }
+
+    .envMercier {
+        text-align: left;
+        padding: 50px 0px 50px 0px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -444,6 +454,11 @@ button.brook-btn.bk-btn-border-animate:hover{
 
     .circle-play-btn:hover {
         background-color: #f0f0f0;
+    }
+
+    .envMercier {
+        text-align: left;
+        padding: 50px 0px 50px 0px;
     }
 }
 
