@@ -214,20 +214,39 @@
 
 </style>
 
+<style>
+    .blog-img {
+        overflow: hidden;
+    }
+
+    .blog-img img {
+        transition: transform 0.5s ease;
+    }
+
+    .blog-item:hover .blog-img img {
+        transform: scale(1.1);
+    }
+</style>
+
     <!-- Blog Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
+    <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
             <div class="row g-5">
                 <!-- Blog list Start -->
-                <div class="col-lg-9">
+                <div class="col-lg-12">
                     <div class="row g-5">
-                        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 68px;">
-                        <div class="container py-5">
+                        <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 68px;">
+                        <div class="container">
+                            <div class="section-title text-center position-relative pb-5 mb-4 mx-auto" style="max-width: 600px;">
+                <button class="brook-btn bk-btn-border-animate btn-sd-size btn-rounded" style="width: 40%; min-width: fit-content; font-weight: bold; margin-top: 50px;">CSR</button>
+                <button class="brook-btn bk-btn-border-animate btn-sd-size btn-rounded" style="width: 40%; min-width: fit-content; font-weight: bold; margin-top: 50px; margin-left: 10px;">KEGIATAN</button>
+            </div>
                             <div class="row g-5">
                                 <!-- Blog list Start -->
                                 <div class="col-lg-12">
                                     <div class="row g-5">
-                                        <div class="col-md-4 wow slideInUp" data-wow-delay="0.1s">
+
+                                        <div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
                                             <a href="blog_detail-4.html">
                                                 <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
                                                     <div class="blog-img position-relative overflow-hidden">
@@ -243,7 +262,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+                                        <div class="col-md-3 wow slideInUp" data-wow-delay="0.6s">
                                             <a href="blog_detail-3.html">
                                                 <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
                                                     <div class="blog-img position-relative overflow-hidden">
@@ -260,7 +279,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-md-4 wow slideInUp" data-wow-delay="0.1s">
+                                        <div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
                                             <a href="blog_detail-2.html">
                                                 <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
                                                     <div class="blog-img position-relative overflow-hidden">
@@ -277,7 +296,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-md-4 wow slideInUp" data-wow-delay="0.1s">
+                                        <div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
                                             <a href="blog_detail-1.html">
                                                 <div class="blog-item blog-lineDownMercier rounded overflow-hidden h-100">
                                                     <div class="blog-img position-relative overflow-hidden">
@@ -323,9 +342,22 @@
                     </div>
                 </div>
                 <!-- Blog list End -->
+
+                <div class="col-lg-8">
+                        <!-- Tags Start -->
+                        <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h5 class="mb-0">tag</h3>
+                            </div>
+                            <div class="d-flex flex-wrap m-n1">
+                                <a href="" class="btn btn-light m-1">CSR</a>
+                                <a href="" class="btn btn-light m-1">Kegiatan</a>
+                            </div>
+                        </div>
+                    </div>
     
                 <!-- Sidebar Start -->
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <!-- Search Form Start -->
                     <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
                         <div class="input-group">
@@ -336,7 +368,7 @@
                     <!-- Search Form End -->
     
                     <!-- Category Start -->
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                    <!-- <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
                         <div class="section-title section-title-sm position-relative pb-3 mb-4">
                             <h3 class="mb-0">Categories</h3>
                         </div>
@@ -344,7 +376,7 @@
                             <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>CSR</a>
                             <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Kegiatan</a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Category End -->
     
                     <!-- Recent Post Start -->
@@ -380,17 +412,10 @@
                         <img src="img/blog-1.jpg" alt="" class="img-fluid rounded">
                     </div> -->
                     <!-- Image End -->
-    
-                    <!-- Tags Start -->
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="mb-0">Tag Cloud</h3>
-                        </div>
-                        <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-light m-1">CSR</a>
-                            <a href="" class="btn btn-light m-1">Kegiatan</a>
-                        </div>
                     </div>
+
+
+
                     <!-- Tags End -->
     
                     <!-- Plain Text Start -->
@@ -404,7 +429,7 @@
                         </div>
                     </div> -->
                     <!-- Plain Text End -->
-                </div>
+                
                 <!-- Sidebar End -->
             </div>
         </div>
