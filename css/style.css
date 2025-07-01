@@ -14,7 +14,6 @@
         .parallax-section1 {
             margin-top: 75px;
             margin-bottom: 75px;
-            background-image: url('../img/backbrand/body-brand-banner.jpg');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -28,8 +27,7 @@
 
         .parallax-section2 {
             margin-top: 75px;
-            margin-bottom: 75px;
-            background-image: url('../img/backbrand/body-brand-CLINIC.jpg');
+            margin-bottom: 75px;;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -44,7 +42,6 @@
         .parallax-section3 {
             margin-top: 75px;
             margin-bottom: 75px;
-            background-image: url('../img/backbrand/body-brand-MPM.jpg');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
