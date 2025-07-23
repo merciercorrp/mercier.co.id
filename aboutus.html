@@ -2,1058 +2,468 @@
 <html lang="en">
 
 <head>
-    <title>Animate By Yunna Mercier</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="mercier.co.id" name="keywords">
+    <meta content="mercier.co.id" name="description">
 
-    <link rel="apple-touch-icon" href="img/b_animate.png">
-    <link rel="shortcut icon" type="image/x-icon" href="img/b_animate.png">
+    <!-- Favicon -->
+    <link href="img/logo_mercier_small.png" rel="icon">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <!-- <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100  .numbered-indicators button {
+        background: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        position: relative;
+        padding: 5px 10px;
+    }
 
-    <style>
-        .swiper-pagination-bullet-active {
-            opacity: var(--swiper-pagination-bullet-opacity, 1);
-            background: background: #ff5f9d;
-            width: 20px;
-            border-radius: 0px;
-        }
+    .numbered-indicators button::after {
+        content: '';
+        display: block;
+        margin-top: 4px;
+        height: 3px;
+        width: 100%;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
 
-        .swiper-pagination-bullet-active {
-            opacity: var(--swiper-pagination-bullet-opacity, 1);
-            background: #ff5f9d;
-        }
+    .numbered-indicators .active::after {
+        background-color: white;
+    }
 
-        /*.swiper-pagination-bullet {
-            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
-            display: inline-block;
-            border-radius: 0px;
-            background: #fd7fae;
-            opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
-        }*/
+    .numbered-indicators .active {
+        color: white;
+    }top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
 
-        .swiper-pagination-bullet {
-            border-radius: 0px;
-            width: 50px;
-            height: 5px;
-        }
-
-        .custom-dropdown-vertical .toggle-icon {
-          float: right;
-          transition: transform 0.3s ease;
-        }
-
-        .custom-dropdown-vertical.open .toggle-icon {
-          transform: rotate(180deg);
-        }
-
-        .custom-dropdown-menu {
-          display: none;
-          margin: 0;
-          padding-left: 1rem;
-        }
-
-        .custom-dropdown-vertical.open .custom-dropdown-menu {
-          display: block;
-        }
-
-        /* Optional: spacing between items */
-        .dropdown-item {
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-        }
-
-        .custom-dropdown-menu {
-          list-style: none; /* HILANGKAN BULLET */
-          padding-left: 1rem; /* jika ingin ada jarak ke kiri */
-          margin: 0;
-        }
-
-        .logobyAnimate {
-            font-size: 28px !important;
-            padding-bottom: 0px !important;
-            position: absolute;
-            left: 2%;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .logobyAnimate {
-                font-size: 28px !important;
-                padding-bottom: 0px !important;
-                position: absolute;
-                left: 36%;
-            }
-        }
-        </style>
-
-
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow" style="position: fixed; width: 100%; z-index: 999; background: white;">
-        <div class=" d-flex align-items-left">
-            <a class="navbar-brand text-success logo h1 align-self-center" style="    font-size: 28px !important;
-    padding-bottom: 0px !important;
-    position: absolute;
-    left: 2%;" href="index.html">
-            <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
-        </a>
-        </div>
-    <div class="container d-flex justify-content-between align-items-center" style="
-    padding-bottom: 10px;
-    padding-top: 10px;
-">
-    <!-- 
-        <a class="navbar-brand text-success logo h1 align-self-center" style="font-size: 28px !important; padding-bottom: 0px !important; " href="index.html">
-            <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
-        </a> -->
-
-        <style>
-
-  </style>
-
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-            <div class="flex-fill">
-                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-
-                    <!-- SHOP ALL MEGA MENU -->
-                    <li class="nav-item dropdown position-static" data-bs-auto-close="outside">
-                        <a class="nav-link dropdown-toggle" href="#" id="megaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            SHOP
-                        </a>
-                        <div class="dropdown-menu w-100 mt-0 border-0 shadow" aria-labelledby="megaDropdown" style="left: 0; right: 0; background-color: #fef7ff;">
-                            <div class="container py-4">
-                                <div class="row">
-                                    <!-- Face -->
-                                    <div class="col-md-2">
-                                        <h6 class="fw-bold">Face</h6>
-                                        <ul class="list-unstyled">
-                                          <!-- Facial Wash Toggle -->
-                                          <li class="custom-dropdown-vertical">
-                                              <a href="#" class="custom-dropdown-toggle dropdown-item" id="dropdownFacialWash">
-                                                Facial Wash <span class="toggle-icon">▾</span>
-                                              </a>
-                                              <ul class="custom-dropdown-menu" aria-labelledby="dropdownFacialWash">
-                                                <li><a class="dropdown-item" href="#">Brightly Series</a></li>
-                                                <li><a class="dropdown-item" href="#">Acne Series</a></li>
-                                                <li><a class="dropdown-item" href="#">Age Delay</a></li>
-                                              </ul>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Face Serum</a></li>
-                                            <li><a class="dropdown-item" href="#">Sunscreen</a></li>
-                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
-                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
-                                            <li><a class="dropdown-item" href="#">Exfoliating</a></li>
-                                            <li><a class="dropdown-item" href="#">Face Mask</a></li>
-                                            <li><a class="dropdown-item" href="#">Face Moisturizer</a></li>
-                                            <li><a class="dropdown-item" href="#">Lip Treatment</a></li>
-                                            <li><a class="dropdown-item" href="#">Eye Treatment</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Body -->
-                                    <div class="col-md-2">
-                                        <h6 class="fw-bold">Body</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a class="dropdown-item" href="#">Body Lotion</a></li>
-                                            <li><a class="dropdown-item" href="#">Body Serum</a></li>
-                                            <li><a class="dropdown-item" href="#">Shower Scrub</a></li>
-                                            <li><a class="dropdown-item" href="#">Body Cream</a></li>
-                                            <li><a class="dropdown-item" href="#">Body Scrub</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Parfum -->
-                                    <div class="col-md-2">
-                                        <h6 class="fw-bold">Parfum</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a class="dropdown-item" href="#">Eau de Parfum</a></li>
-                                            <li><a class="dropdown-item" href="#">Extrait de Parfum</a></li>
-                                            <li><a class="dropdown-item" href="#">Shimmer Liquid Body Perfume</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Hair -->
-                                    <div class="col-md-2">
-                                        <h6 class="fw-bold">Hair</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a class="dropdown-item" href="#">Shampoo</a></li>
-                                            <li><a class="dropdown-item" href="#">Conditioner</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Bundling -->
-                                    <div class="col-md-2">
-                                        <h6 class="fw-bold">Bundling</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a class="dropdown-item" href="#">Bundling</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Skin Concern -->
-                                    <div class="col-md-2">
-                                        <h6 class="fw-bold">Skin Concern</h6>
-                                        <ul class="list-unstyled">
-                                            <li><strong>Dull Skin</strong>
-                                                <ul class="list-unstyled ps-3">
-                                                    <li><a class="dropdown-item" href="#">Brightly Series</a></li>
-                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><strong>Acne Prone Skin</strong>
-                                                <ul class="list-unstyled ps-3">
-                                                    <li><a class="dropdown-item" href="#">Acne Series</a></li>
-                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><strong>Anti Aging</strong>
-                                                <ul class="list-unstyled ps-3">
-                                                    <li><a class="dropdown-item" href="#">Age Delay Series</a></li>
-                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><strong>Oily Skin</strong>
-                                                <ul class="list-unstyled ps-3">
-                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
-                                                    <li><a class="dropdown-item" href="#">Face Toner</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="education.html">EDUCATION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="awards.html">AWARDS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="navbar align-self-center d-flex">
-                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                        <div class="input-group-text">
-                            <i class="fa fa-fw fa-search"></i>
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 pt-4 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img class="img-fluid" style="padding: 10px; filter: invert(1);" src="img/logo_mercier.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars" style="color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="aboutus.html" class="nav-item nav-link">About Us</a>
+                    <a href="brand.html" class="nav-item nav-link">Brand</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Activity</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="activity.html" class="dropdown-item">CSR</a>
+                            <a href="activityk.html" class="dropdown-item">Kegiatan</a>
                         </div>
                     </div>
+                    <a href="career.html" class="nav-item nav-link">Career</a>
                 </div>
-                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                </a>
-                <!-- <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                </a> -->
-            </div>
-        </div>
-
-    </div>
-</nav>
-
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-<style>
-.team-hero-section {
-  height: 60vh;
-  background-image: url('img/back/about.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  filter: brightness(0.85);
-}
-
-.circle-play-icon {
-    width: 90px;
-    height: 90px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease;
-}
-
-.circle-play-icon i {
-  font-size: 35px;
-  color: white;
-}
-
-.circle-play-icon:hover {
-  background-color: #ff5f9d;
-  transform: scale(1.1);
-  color: black;
-}
-
-.circle-play-icon i:hover {
-  font-size: 35px;
-  color: white;
-}
-
-.h-100 {
-    height: 104% !important;
-}
-
-.text-muted {
-    color: #3e3e3e !important;
-    line-height: 1.625;
-}
-</style>
-
-   <section class="team-hero-section">
-    <div class="container h-100">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <!-- Play Button Circle -->
-        <a href="#" class="play-button" data-bs-toggle="modal" data-bs-target="#videoModal" style="text-decoration: none;">
-          <div class="circle-play-icon">
-            <i class="fas fa-play"></i>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap Modal for Video -->
-  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-black">
-        <div class="modal-header border-0">
-          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-0">
-              <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/526UhfG0g5A?autoplay=1&mute=1&si=sjsNen-QUUp0NFis" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allow="autoplay" 
-                    allowfullscreen>
-                </iframe>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Auto Play / Stop Video Script -->
-  <script>
-    const videoModal = document.getElementById('videoModal');
-    const youtubePlayer = document.getElementById('youtubePlayer');
-    const videoURL = 'https://www.youtube.com/embed/VIDEO_ID?autoplay=1';
-
-    videoModal.addEventListener('show.bs.modal', () => {
-      youtubePlayer.setAttribute('src', videoURL);
-    });
-
-    videoModal.addEventListener('hidden.bs.modal', () => {
-      youtubePlayer.setAttribute('src', '');
-    });
-  </script>
-
-  <style>
-  .text-purple {
-      color: #ff5f9d !important;
-    }
-
-    .ecosystem-section h1 {
-      font-size: 2.5rem;
-    }
-
-    img.rounded-4 {
-      border-radius: 1rem;
-    }
-
-    .ceo-section {
-  background-color: #f8f3fc;
-}
-
-.text-purple {
-  color: #ff5f9d !important;
-}
-
-.rounded-4 {
-  border-radius: 1rem;
-}
-
-.quote-section {
-  background-color: #ffffff;
-}
-
-.quote-text {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto;
-  color: #8224e3; /* ungu Animate */
-}
-
-.journey-section {
-  background-color: #ffffff;
-}
-
-.text-purple {
-  color: #8224e3;
-}
-
-.journey-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-}
-
-
-  </style>
-
-  <!-- Section Start -->
-  <section class="ecosystem-section py-5" style="background-color: #fd7fae7d;">
-    <div class="container text-center" style="    max-width: 900px;">
-      <h1 class="fw-bold mb-3" style=" background: linear-gradient(133deg, rgba(255, 95, 157, 1) 0%, rgba(255, 95, 157, 1) 63%, #FFE6EB 64%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; line-height: 1.5; font-size: 54px; ">
-        Level Up Your Beauty with<br>
-        <span style=" background: linear-gradient(133deg, rgba(255, 95, 157, 1) 0%, rgba(255, 95, 157, 1) 79%, #FFE6EB 83%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; ">Animate Beauty Dreams</span>
-      </h1>
-      <p class="lead text-muted" style="font-size: 15px;">
-        Animate merupakan <em>beauty brand</em> lokal terkemuka sejak 2017 yang berhasil menciptakan 
-        <em>body & personal care</em> melalui kreativitas, teknologi, dan inovasi terkini. Kepercayaan Sahabat Animate untuk cantik 
-        bersama menjadikan salah satu <em>top brand</em> favorit di kategori body lotion dan parfum di Indonesia.
-      </p>
-      <p class="fw-medium mt-3" style="line-height: 1.625;">
-        Saatnya <em class="fw-bold">Level Up Your Beauty</em> bersama Animate, wujudkan cantik versi terbaikmu!
-      </p>
-    </div>
-
-    <!-- Content 2 Column -->
-    <div class="container" style="padding: 90px 90px 45px 90px;">
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0" style="text-align: center;">
-          <img src="img/Bu-yunna.png" alt="Co-Founder" class="img-fluid rounded-4 shadow" width="260">
-        </div>
-        <div class="col-md-6">
-          <h2 class="text-purple fw-bold">
-            GREETINGS FROM<br>OUR CO-FOUNDER
-          </h2>
-          <small class="text-muted">Her Perspective</small>
-          <p class="mt-3 text-dark">
-            Setiap orang memiliki <em>beauty goals</em> yang berbeda seiring berjalannya waktu.
-          </p>
-          <p class="text-dark">
-            Demi mendukung <em>beauty goals</em> tersebut, Animate terus menciptakan formula produk-produk 
-            <em>beauty & personal care</em> terbaik. Animate percaya bahwa perjalanan dalam menemukan versi cantik 
-            dirimu dapat menjadi pengalaman yang seru.
-          </p>
-          <p class="text-dark">
-            Coba dan temukan cantik terbaikmu dengan rangkaian produk Animate!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> 
-
-  <!-- Section CEO -->
-<!--     <section class="ceo-section py-5">
-      <div class="container">
-        <div class="row align-items-center flex-md-row flex-column-reverse">
-          <div class="col-md-6 text-md-start text-center mt-4 mt-md-0">
-            <h2 class="text-purple fw-bold">
-              GREETINGS FROM<br>OUR CEO
-            </h2>
-            <small class="text-muted">His Perspective</small>
-            <p class="mt-3 text-dark">
-              Animate percaya perlu adanya produk yang tepat untuk mengakomodasi kebutuhan perawatan kulit, 
-              sehingga menjadikan Animate unggul di <em>local beauty</em> Indonesia
-            </p>
-          </div>
-          <div class="col-md-6 text-center">
-            <img src="img/ceo.png" alt="CEO" class="img-fluid rounded-4 shadow" />
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Section Quote -->
-    <section class="quote-section py-5 text-center">
-      <div class="container">
-        <blockquote class="quote-text fw-semibold fst-italic text-purple">
-          “Animate is a beauty company focused on innovation, quality, and sustainability. We offer premium skincare products, professional beauty clinic services, and cosmetic manufacturing. Committed to balancing profit, human well-being, and environmental impact, we aim to provide beauty solutions that benefit both customers and the world responsibly.”
-        </blockquote>
-        <div class="mt-4">
-          <h6 class="fw-bold mb-0">Yunna Mercier</h6>
-          <small class="text-muted">Co-Founder</small>
-        </div>
-      </div>
-    </section>
-
-
-    <style>
-.mySwiper-testimoni {
-  padding: 30px 0;
-}
-
-.mySwiper-testimoni .testimonial-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  height: auto;
-}
-
-.mySwiper-testimoni .testimonial-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  object-fit: cover;
-}
-
-.mySwiper-testimoni h4 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.mySwiper-testimoni .position {
-  font-size: 0.875rem;
-  color: gray;
-  margin-bottom: 10px;
-}
-
-.mySwiper-testimoni .quote {
-  font-style: italic;
-  color: #9b59b6;
-  font-size: 0.95rem;
-}
-
-</style>
-
-    <!-- Section: Greetings from BOD -->
-<section class="bod-section py-5">
-  <div class="container">
-    <h3 class="fw-bold text-center mb-4">Greetings from our BOD</h3>
-
-    <div class="swiper mySwiper-testimoni">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Randy Saputra</h4>
-          <p class="position">Direktur</p>
-          <p class="quote">“Dengan memberikan inovasi dan produk berkualitas, Animate dipandang sebagai salah satu brand terkuat di tengah ketatnya kompetisi industri local beauty.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Tambah slide lainnya jika ada -->
-      </div>
-
-      <!-- Navigasi -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  var swiperTestimoni = new Swiper(".mySwiper-testimoni", {
-    slidesPerView: 5,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-     breakpoints: {
-     0: {
-      slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 1.5,
-    },
-    768: {
-      slidesPerView: 2.5,
-    },
-    1024: {
-      slidesPerView: 3.5,
-    },
-    1280: {
-      slidesPerView: 4,
-    }
-  }
-  });
-</script>
-
-    <script>
-  const swiperbod = new Swiper(".bod-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 4,
-      }
-    }
-  });
-</script>
-
-<style>
- .timeline-wrapper {
-      position: relative;
-    }
-
-    .timeline-line {
-        position: absolute;
-        top: 0px;
-        bottom: 50px;
-        left: 30px;
-        width: 2px;
-        background-color: #ff5f9d;
-        z-index: 0;
-    }
-
-    .nav-pills .nav-link {
-      color: #333;
-      font-weight: 600;
-      text-align: left;
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 20px;
-      background: white;
-    }
-
-    .nav-pills .nav-link::before {
-      content: "";
-      position: absolute;
-      left: 0.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #fff;
-      border: 2px solid #ccc;
-      z-index: 1;
-    }
-
-    .nav-pills .nav-link.active::before {
-      background-color: #fedae7;
-      border-color: #212529;
-    }
-
-    .nav-pills .nav-link.active {
-          background-color: #ff5f9d;
-          color: rgb(255, 255, 255);
-    }
-
-    .tab-content .tab-pane {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .tab-content h5 {
-      color: #7e57c2;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .tab-content ul {
-      padding-left: 1.2rem;
-    }
-
-    @media (max-width: 768px) {
-      .nav.flex-column {
-        flex-direction: row !important;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
-
-      .nav-pills .nav-link {
-        flex: 1 0 auto;
-        text-align: center;
-        padding: 0.75rem 1rem;
-      }
-
-      .timeline-line {
-        display: none;
-      }
-
-      .nav-pills .nav-link::before {
-        content: "";
-        position: absolute;
-        left: 0.3rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        z-index: 1;
-    }
-</style>
-
-<section class="py-5">
-<h3 class="fw-bold text-center mb-5">Innovation Journey</h3>
-
-<div class="container timeline-wrapper">
-  <div class="timeline-line"></div>
-  <div class="row">
-    <!-- Pills Navigation -->
-    <div class="col-md-2 mb-4">
-      <div class="nav flex-md-column nav-pills" id="year-tabs" role="tablist" aria-orientation="vertical">
-        <!-- <button class="nav-link active" id="tab-2017" data-bs-toggle="pill" data-bs-target="#year-2017" type="button" role="tab">2017</button>
-        <button class="nav-link" id="tab-2018" data-bs-toggle="pill" data-bs-target="#year-2018" type="button" role="tab">2018</button>
-        <button class="nav-link" id="tab-2019" data-bs-toggle="pill" data-bs-target="#year-2019" type="button" role="tab">2019</button>
-        <button class="nav-link" id="tab-2020" data-bs-toggle="pill" data-bs-target="#year-2020" type="button" role="tab">2020</button> -->
-        <button class="nav-link active" id="tab-2021" data-bs-toggle="pill" data-bs-target="#year-2021" type="button" role="tab">2021</button>
-        <button class="nav-link" id="tab-2022" data-bs-toggle="pill" data-bs-target="#year-2022" type="button" role="tab">2022</button>
-        <button class="nav-link" id="tab-2023" data-bs-toggle="pill" data-bs-target="#year-2023" type="button" role="tab">2023</button>
-        <button class="nav-link" id="tab-2024" data-bs-toggle="pill" data-bs-target="#year-2024" type="button" role="tab">2024</button>
-        <button class="nav-link" id="tab-2025" data-bs-toggle="pill" data-bs-target="#year-2025" type="button" role="tab">2025</button>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <div class="col-md-10">
-      <div class="tab-content" id="year-tabs-content">
-        <section class="tab-pane fade show active" id="year-2021" role="tabpanel">
-          <h5>Launching</h5>
-          <ul>
-            <li>5 Varian Animate New Body Lotion Fragrance Brightening Body Lotion Bright Mood Booster</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2022" role="tabpanel">
-          <ul>
-            <li>Perfume La Foret Fairy</li>
-            <li>Perfume Wonderland</li>
-            <li>Perfume Velvet Rouge</li>
-            <li>Perfume Golden Elixir</li>
-            <li>Perfume Biru Samudra</li>
-            <li>Perfume Purple Kiss</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2023" role="tabpanel">
-          <ul>
-            <li>Perfume Garden of Whisper</li>
-            <li>Perfume Jolly</li>
-            <li>Shimmer Liquid Body Perfume Kilau Samudra</li>
-            <li>Body Serum Tube Charming</li>
-            <li>Body Serum Tube Jolly</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2024" role="tabpanel">
-          <ul>
-            <li>Revive Glow Elixir Red Exfo Intensive Peeling Solution</li>
-            <li>Brightly Ever After Essense Foam Toner</li>
-            <li>Aqua Reset & Barrier Gel Moisturizer</li>
-            <li>Brightly and Acne Cloud Facial Foam</li>
-            <li>AHA Body Serum</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2025" role="tabpanel">
-          <p>Content for 2022 (coming soon)</p>
-        </section>
-
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-
-
-
-
-
-
-<style>
-    .mission-section {
-  background-color: #ffffff;
-}
-
-.mission-box {
-  background-color: #fef6ff;
-  border: 1px solid #eee;
-}
-
-.text-purple {
-  color: #8224e3;
-}
-
-.mission-section img {
-  border-radius: 16px;
-  max-width: 100%;
-  object-fit: cover;
-}
-</style>
-
-<!-- Section: Our Missions -->
-<section class="mission-section py-5">
-  <div class="container">
-    <div class="row align-items-center gy-4">
-      <!-- Gambar -->
-      <div class="col-lg-6">
-        <img src="img/back/BANNER-5.png" alt="Our Mission" class="img-fluid rounded-4 shadow-sm" />
-      </div>
-
-      <style>
-        .vandm li {
-          font-size: 18px !important;
-          margin-bottom: 12px;
-          line-height: 1.68;
-        }
-      </style>
-
-      <!-- Konten -->
-  <div class="col-lg-6">
-  <div class="mission-box p-4 rounded-4">
-    <h3 class="fw-bold text-purple">Vision and Mission</h3>
-    <hr />
-    <ol class="vandm ps-3">
-      <li>Menjadi Top 3 brand kecantikan di Middle Low Market di 2025</li>
-      <li>Percaya kepada kekuasaan Tuhan Yang Maha Esa. Menghidupkan kepercayaan diri wanita Indonesia. Memberikan “Service Excellence”.</li>
-      <li>Up to Date Brand Development. Menjadi Rumah untuk Talenta Terbaik. Menjadi Perusahaan tingkat dunia.</li>
-      <li>Mendapatkan 10% Market Share dari penjualan produk kecantikan Indonesia.</li>
-      <li>Produk kecantikan Indonesia.</li>
-    </ol>
-  </div>
-</div>
-</div>
-</section>
-
-
-
-  <!-- Start Footer -->
-    <footer class="bg-white" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success  pb-3  logo"><img width="200" src="img/b_animate_white.png" style="filter: invert();"> </h2>
-                    <ul class="list-unstyled text-dark footer-link-list">
-                        <!-- <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
-                        </li>
-                        </li> -->
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
-                    <ul class="list-unstyled text-dark footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Serum Series</a></li>
-                        <li><a class="text-decoration-none" href="#">Whitening Series</a></li>
-                        <li><a class="text-decoration-none" href="#">Barier Series</a></li>
-                        <li><a class="text-decoration-none" href="#">Acne Series</a></li>
-                        <li><a class="text-decoration-none" href="#">Anti Aging Series</a></li>
-                        <li><a class="text-decoration-none" href="#">Dark Spot Series</a></li>
-                        <li><a class="text-decoration-none" href="#">Microbiosme Series</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
-                    <ul class="list-unstyled text-dark footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">Education</a></li>
-                        <li><a class="text-decoration-none" href="#">Awards</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="row text-dark mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top "></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border  rounded-circle text-center">
-                            <a class="text-dark text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-tiktok"></i></a>
-                        </li>
-                        <li class="list-inline-item border  rounded-circle text-center">
-                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border  rounded-circle text-center">
-                            <a class="text-dark text-decoration-none" target="_blank" href="https://twitter.com/"><i><img width="30" style="position: relative; bottom: 3px;" src="img/icon/shopee.png" ></i></a>
-                        </li>
-                        <li class="list-inline-item border  rounded-circle text-center">
-                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="18" style="position: relative; bottom: 3px;" src="img/icon/tokopedia.png" ></i></a>
-                        </li>
-                        <!-- <li class="list-inline-item border  rounded-circle text-center">
-                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="25" style="position: relative; bottom: 2px;" src="img/icon/lazada.png" ></i></a>
-                        </li>
-                        <li class="list-inline-item border  rounded-circle text-center">
-                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="38" style="position: relative; bottom: 2px;" src="img/icon/akulaku.png" ></i></a>
-                        </li> -->
-                    </ul>
-                </div>
-                <!-- <div class="col-auto">
-                    <label class="sr-only" for="subscribeEmail">Email address</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control bg-dark " id="subscribeEmail" placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                <!-- <div class="navbar-nav py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="service.html" class="nav-item nav-link">Brand</a>
+                    <div class="nav-item dropdown">
+                        <a href="blog.html" class="nav-link">CSR</a> 
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="feature.html" class="nav-link">Career</a>
+        
                     </div>
                 </div> -->
+                <div class="navbar-nav ms-auto py-0">
+                   
+                </div>
+                <butaton type="button" class="btn ms-3" data-bs-toggle="modal" data-bs-target="#searchModal" style="color: white;"><i class="fa fa-search"></i></butaton>
             </div>
-        </div>
+        </nav>
 
-        <div class="w-100 bg-white py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-dark">
-                            Copyright &copy; 2025 Animate By Yunna Mercier
-                        </p>
+        <div id="header-carousel" class="carousel slide carousel-fade mMarginPaddingMercier" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/banner/BANNER-4.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-start display-1 text-white mb-md-4 animated zoomIn fontsh2About">About Mercier</h2>
+                        <p class="text-center text-white text-uppercase mb-3 animated slideInDown fontpAbout">Animate is an Indonesia beauty company with the purpose of creating <br>a greater good for the society through innovation.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/banner/BANNER-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-start display-1 text-white mb-md-4 animated zoomIn fontsh2About">About Mercier</h2>
+                        <p class="text-center text-white text-uppercase mb-3 animated slideInDown fontpAbout">Animate is an Indonesia beauty company with the purpose of creating <br>a greater good for the society through innovation.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/banner/BANNER-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-start display-1 text-white mb-md-4 animated zoomIn fontsh2About">About Mercier</h2>
+                        <p class="text-center text-white text-uppercase mb-3 animated slideInDown fontpAbout">Animate is an Indonesia beauty company with the purpose of creating <br>a greater good for the society through innovation.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Full Screen Search End -->
 
-    </footer>
-    <!-- End Footer -->
+    <!-- Features Start -->
+        <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container " style="padding-top: 3rem !important;">"
+                <div class="text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                    <img src="img/logo_mercier.png" style="width: 50%">
+                </div>
+            </div>
+        </div> -->
+    <!-- Features End -->
 
-    <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <!-- End Script -->
+    <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="1s">
+    <div class="container py-5 text-center">
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggles = document.querySelectorAll('.custom-dropdown-toggle');
+        <div class="row text-center mt-5">
+            <div class="col-md-3">
+                <h1 style="color: #06a3da; font-weight: bold; font-size: 110px;">F</h1>
+                <h5 style="color: #06a3da; font-weight: bold; margin-bottom: 50px;">Focused</h5>
+                <p>Oriented towards the main goals with full concentration, avoiding irrelevant distractions, and ensuring that every action supports the achievement of strategic targets.</p>
+            </div>
+            <div class="col-md-3">
+                <h1 style="color: #f28caf; font-weight: bold; font-size: 110px;">A</h1>
+                <h5 style="color: #f28caf; font-weight: bold; margin-bottom: 50px;">Action</h5>
+                <p>Having an orientation towards real actions and taking proactive steps to complete tasks, not just planning or discussing.</p>
+            </div>
+            <div class="col-md-3">
+                <h1 style="color: #06a3da; font-weight: bold; font-size: 110px;">S</h1>
+                <h5 style="color: #06a3da; font-weight: bold; margin-bottom: 50px;">Synergy</h5>
+                <p>Prioritizing collaborative efforts that support one another between individuals or divisions to achieve the best results with high efficiency.</p>
+            </div>
+            <div class="col-md-3">
+                <h1 style="color: #f28caf; font-weight: bold; font-size: 110px;">T</h1>
+                <h5 style="color: #f28caf; font-weight: bold; margin-bottom: 50px;">Timely</h5>
+                <p>Completing work according to the agreed deadlines, without compromising the quality of the results.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-        toggles.forEach(toggle => {
-          toggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            const parent = this.closest('.custom-dropdown-vertical');
-            parent.classList.toggle('open');
-          });
-        });
-      });
-    </script>
+
+    <!-- Parallax -->
+    <section class="parallaxMercierActivityAboutUs">
+        <!-- Overlay gelap -->
+        <div class="parallax-overlay"></div>
+
+        <!-- Logo di tengah -->
+        <div class="parallax-content text-center pContentMercier">
+            <h1 style="color: white; font-size: 42px; font-weight: bold;">VISI & MISI <img src="img/b_animate_white.png" width="200"></h1>
+            
+        </div>
+    </section>
+
+    <!-- Parallax End-->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 envMercier">
+            <p class="colorBlueMercier">
+                1. Menjadi Top 3 brand kecantikan di Middle Low Market di 2025
+                <br/><br/>
+                2. Percaya kepada kekuasaan Tuhan Yang Maha Esa. Menghidupkan kepercayaan diri wanita Indonesia Memberikan “Service Excellence”
+<br/><br/>
+                3. Up to Date Brand Development. Menjadi Rumah untuk Talenta Terbaik. Menjadi Perusahaan tingkat dunia.
+<br/><br/>
+                4. Mendapatkan 10% Market Share dari penjualan
+<br/><br/>
+                5. produk kecantikan Indonesia.
+            </p>
+            <button class="brook-btn bk-btn-border-animate btn-sd-size btn-rounded" style="width: 15%; min-width: fit-content; font-weight: bold; margin-top: 50px;">Visit Website</button>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Parallax -->
+    <section class="parallaxMercierActivityAboutUs">
+        <!-- Overlay gelap -->
+        <div class="parallax-overlay"></div>
+
+        <!-- Logo di tengah -->
+        <div class="parallax-content text-center pContentMercier">
+            <h1 style="color: white; font-size: 42px; font-weight: bold;">VISI & MISI <img src="img/b_mpm_beauty_white.png" width="200"></h1>
+        </div>
+    </section>
+
+    <!-- Parallax End-->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 envMercier">
+            <p class="colorBlueMercier">
+                1. Memberikan “Service Excellent”.
+                <br/><br/>
+2. Memberikan kualitas, kecepatan, dan pelayanan terbaik.
+<br/><br/>
+3. Menjadi rumah untuk talenta terbaik.
+<br/><br/>
+4. Menjadi perusahaan tingkat dunia.
+<br/><br/>
+5. Menjadi pabrik dari 100 brand skincare & kosmetik terbaik di Indonesia.
+            </p>
+            <a href="https://mpmbeauty.co.id/" target="_blank" rel="noopener noreferrer">
+            <button class="brook-btn bk-btn-border-animate btn-sd-size btn-rounded" style="width: 15%; min-width: fit-content; font-weight: bold; margin-top: 50px;">Visit Website</button>
+            </a>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Parallax -->
+    <section class="parallaxMercierActivityAboutUs">
+        <!-- Overlay gelap -->
+        <div class="parallax-overlay"></div>
+
+        <!-- Logo di tengah -->
+        <div class="parallax-content text-center pContentMercier">
+            <h1 style="color: white; font-size: 42px; font-weight: bold;">VISI & MISI <img src="img/b_animates_white.png" width="200"></h1>
+            
+        </div>
+    </section>
+
+    <!-- Parallax End-->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 envMercier">
+            <p class="colorBlueMercier">
+                1. Menjadi Top 3 Klinik Kecantikan di Indonesia
+                <br/><br/>
+2. Percaya kepada kekuasaan Tuhan Yang Maha Esa.
+<br/><br/>
+3. Menghidupkan kepercayaan diri wanita Indonesia Memberikan “Service Excellence”
+<br/><br/>
+4. Up to Date Brand Development.
+<br/><br/>
+5. Menjadi Rumah untuk Talenta Terbaik. Menjadi Perusahaan tingkat dunia
+<br/><br/>
+6. Mendapatkan 10% Market Share dari penjualan produk kecantikan Indonesia.
+<br/><br/>
+7. Mempunyai cabang di seluruh kota di Indonesia
+            </p>
+            <button class="brook-btn bk-btn-border-animate btn-sd-size btn-rounded" style="width: 15%; min-width: fit-content; font-weight: bold; margin-top: 50px;">Visit Website</button>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Features Start -->
+<!--     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background: #ff6ca5;">
+            <div class="container py-5">
+                                        <div class="row g-5">
+                        <div class="col-lg-1"><h1 class="mb-0"></h1></div>
+                        <div class="col-lg-5">
+                            <div class="text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                        <h1 class="mb-0" style="color: white;">Vision</h1>
+                    </div>
+
+                            <p class="colorBlueMercier" style="color: white;">
+                            Animate Skinthetic adalah Klinik kecantikan pertama dari brand animate skincare, dengan di dukung oleh dokter-dokter dan tim klinik yang berpengalaman di dunia kecantikan, serta di support oleh mesin-mesin berteknologi tinggi membuat para wanita yang melakukan perawatan mendapatkan hasil yang maskimal.
+                            </p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                        <h1 class="mb-0" style="color: white;">Mission</h1>
+                    </div>
+
+                            <p class="colorBlueMercier" style="color: white;">
+                            Animate Skinthetic adalah Klinik kecantikan pertama dari brand animate skincare, dengan di dukung oleh dokter-dokter dan tim klinik yang berpengalaman di dunia kecantikan, serta di support oleh mesin-mesin berteknologi tinggi membuat para wanita yang melakukan perawatan mendapatkan hasil yang maskimal.
+                            </p>
+                        </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Features Start -->
+
+    <style>
+        .section-title.text-center::after
+ {
+    -webkit-animation: section-title-run-center 5s infinite linear;
+    animation: section-title-run-center 200s infinite linear;
+}
+    </style>
+
+<!-- <div class="container-fluid py-5 px-5 wow fadeInUp" data-wow-delay="0.1s" style="background: #06a3da;"> -->
+<div class="pt-5 pb-5 wow fadeInUp" data-wow-delay="0.1s" style="background: #06a3da;">
+    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                        <h1 class="mb-0" style="color: white;">Location</h1>
+                    </div>
+    <div>
+        <!-- <iframe style="width : 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.3083294083362!2d106.74057167587561!3d-6.089100293897165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x231a7e3ed1cb260b%3A0xdd2cf2d5283119b3!2sPT%20Mercier%20Estetika%20Internasional!5e0!3m2!1sid!2sid!4v1750216837458!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <!-- <img class="img-fluid" src="img/dist_animate.png"> -->
+        <div style="height:500px; overflow:hidden; position:relative;">
+  <iframe 
+    src="https://www.google.com/maps/d/embed?mid=13cFkwTxqFsYGi2dJm1ko7EryfWCCa58&ehbc=2E312F" 
+    width="100%" 
+    height="550" 
+    style="position:absolute; top:-64px; border:0;">
+  </iframe>
+</div>
+    </div>
+</div>
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light wow fadeInUp" style="background: #ff5f9d;" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <!-- <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-4" style="background: #fd7fae !important">
+                        <a href="index.html" class="navbar-brand">
+                            <img class="img-fluid" style="padding: 10px;" src="img/logo_mercier_300.png">
+                        </a>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Follow Me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+                <div class="col-lg-12 col-md-6">
+                    <div class="row gx-5" style="margin-top: 80px; margin-bottom: 5px;">
+                        <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class=" section-title-sm position-relative pb-3 mb-4">
+                                <img src="img/logo_mercier_300.png">
+                            </div>
+                            <!-- <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div> -->
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class=" section-title-sm position-relative pb-3 mb-4">
+                                <h5 class="text-light mb-0">Privacy Policy</h5>
+                            </div>
+                            <!-- <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class=" section-title-sm position-relative pb-3 mb-4">
+                                <h5 class="text-light mb-0">terms & Conditions</h5>
+                            </div>
+                            <!-- <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div> -->
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h5 class="text-light mb-0">Follow us on</h5>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/mercier-corp/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/lifeatmercier/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://www.tiktok.com/@lifeatmercier" target="_blank"><i class="fab fa-tiktok fw-normal"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#"> 2025 Mercier Corp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Footer End -->
 
 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
