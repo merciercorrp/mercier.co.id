@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animate By Yunna Mercier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="img/b_animate.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/b_animate.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <style>
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: background: #ff5f9d;
+            width: 20px;
+            border-radius: 0px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: #ff5f9d;
+        }
+
+        /*.swiper-pagination-bullet {
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+            display: inline-block;
+            border-radius: 0px;
+            background: #fd7fae;
+            opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+        }*/
+
+        .swiper-pagination-bullet {
+            border-radius: 0px;
+            width: 50px;
+            height: 5px;
+        }
+
+        .custom-dropdown-vertical .toggle-icon {
+          float: right;
+          transition: transform 0.3s ease;
+        }
+
+        .custom-dropdown-vertical.open .toggle-icon {
+          transform: rotate(180deg);
+        }
+
+        .custom-dropdown-menu {
+          display: none;
+          margin: 0;
+          padding-left: 1rem;
+        }
+
+        .custom-dropdown-vertical.open .custom-dropdown-menu {
+          display: block;
+        }
+
+        /* Optional: spacing between items */
+        .dropdown-item {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+
+        .custom-dropdown-menu {
+          list-style: none; /* HILANGKAN BULLET */
+          padding-left: 1rem; /* jika ingin ada jarak ke kiri */
+          margin: 0;
+        }
+
+        .logobyAnimate {
+            font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logobyAnimate {
+                font-size: 28px !important;
+                padding-bottom: 0px !important;
+                position: absolute;
+                left: 36%;
+            }
+        }
+        </style>
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="position: fixed; width: 100%; z-index: 999; background: white;">
+        <div class=" d-flex align-items-left">
+                    <a class="navbar-brand text-success logo h1 align-self-center" style="    font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;" href="index.html">
+                    <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
+                </a>
+                </div>
+            <div class="container d-flex justify-content-between align-items-center" style="
+            padding-bottom: 10px;
+            padding-top: 10px;
+        ">
+
+        <style>
+
+        </style>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+
+                    <!-- SHOP ALL MEGA MENU -->
+                    <li class="nav-item dropdown position-static" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <div class="dropdown-menu w-100 mt-0 border-0 shadow" aria-labelledby="megaDropdown" style="left: 0; right: 0; background-color: #fef7ff;">
+                            <div class="container py-4">
+                                <div class="row">
+                                    <!-- Face -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Face</h6>
+                                        <ul class="list-unstyled">
+                                          <!-- Facial Wash Toggle -->
+                                          <li class="custom-dropdown-vertical">
+                                              <a href="#" class="custom-dropdown-toggle dropdown-item" id="dropdownFacialWash">
+                                                Facial Wash <span class="toggle-icon">▾</span>
+                                              </a>
+                                              <ul class="custom-dropdown-menu" aria-labelledby="dropdownFacialWash">
+                                                <li><a class="dropdown-item" href="#">Brightly Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Age Delay</a></li>
+                                              </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Face Serum</a></li>
+                                            <li><a class="dropdown-item" href="#">Sunscreen</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                            <li><a class="dropdown-item" href="#">Exfoliating</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Mask</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Moisturizer</a></li>
+                                            <li><a class="dropdown-item" href="#">Lip Treatment</a></li>
+                                            <li><a class="dropdown-item" href="#">Eye Treatment</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Body -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Body</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Body Lotion</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Serum</a></li>
+                                            <li><a class="dropdown-item" href="#">Shower Scrub</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Cream</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Scrub</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Parfum -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Parfum</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Eau de Parfum</a></li>
+                                            <li><a class="dropdown-item" href="#">Extrait de Parfum</a></li>
+                                            <li><a class="dropdown-item" href="#">Shimmer Liquid Body Perfume</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Hair -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Hair</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                                            <li><a class="dropdown-item" href="#">Conditioner</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bundling -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Bundling</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Bundling</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Skin Concern -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Skin Concern</h6>
+                                        <ul class="list-unstyled">
+                                            <li><strong>Dull Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Brightly Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Acne Prone Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Anti Aging</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Age Delay Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Oily Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                    <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<style>
+    .px5Impact1{
+        padding-right: 3rem ;padding-left: 3rem;
+
+    }
+    .px5Impact2{
+        padding-right: 3rem ;padding-left: 3rem; margin-top: 162px;
+    }
+
+    .pImpact{
+        padding-left: 150px; padding-right: 150px; font-size: 16px !important; line-height: 1.5rem;;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .px5Impact1{
+            padding-right: 0rem ;padding-left: 0rem;
+        }
+        .px5Impact2{
+            padding-right: 0rem ;padding-left: 0rem; margin-top: 50px;
+        }
+        .pImpact{
+            padding-left: 15px; padding-right: 15px; font-size: 16px !important;
+        }
+    }
+</style>
+
+<!-- Section Beauty Impact -->
+<section style="padding-top: 70px; padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="container-fluid px5Impact1">
+                <div class="col-12 col-md-12 col-sm-12 m-auto text-left">
+                    <img class="img-fluid" src="img/back/yunna.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="container-fluid px5Impact2">
+                <div class="col-12 col-md-12 col-sm-12 m-auto text-center align-items-center">
+                    <img src="img/b_animate.png" style="width: 300px; margin-bottom: 20px;">
+                    <br/>
+                    <p class="pImpact">
+                        Kenali lebih dalam Program Corporate Social Responsibility (CSR) jangka panjang Animate yang didedikasikan untuk memberdayakan perempuan dan meningkatkan kualitas hidup masyarakat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+  .swiperOurFocuseWrapper {
+    height: 402px !important;
+  }
+
+  .swiperOurFocuseWrapper .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    width: 351px !important;
+    height: 402px;
+    position: relative;
+  }
+
+  .swiperOurFocuseWrapper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/75/Black_Play_Button.png"); /* ikon play */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .OurFocuse-title {
+    font-weight: bold !important;
+    font-size: 36px !important;
+    margin-bottom: 10px !important;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+
+  .OurFocuse-title span {
+    color: #ec4899;
+  }
+
+  .OurFocuse-desc {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: right !important;
+  }
+
+  .ourFocuse{
+    padding-left: 1.3rem; padding-right: 0rem; font-size: 16px !important; font-weight: 600 !important;line-height: 2.625;;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ourFocuse{
+        padding-left: 1rem; padding-right: 1rem; font-size: 16px !important;
+    }
+  }
+</style>
+
+<!-- Section Beauty Impact -->
+<section style="padding-top: 70px; padding-bottom: 0px;">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="container-fluid px-5 ">
+                <div class="col-12 col-md-12 col-sm-12 m-auto text-left align-items-left">
+                    <h1 style="padding-left: 1.3rem; padding-right: 4rem; font-weight: bold; color: #ff5f9d;">Our Focuse</h1>
+                    <br/>
+                    <p class="ourFocuse">
+                        Animate percaya, kecantikan yang sejati tak hanya terpancar dari luar, tetapi juga dari ketulusan hati. Animate Beauty Impact lahir dari dua landasan misi yang menjadi penggerak setiap langkah kami: Kesejahteraan dan Kemajuan Perempuan, serta Peningkatan Kualitas Hidup Masyarakat.<br/><br/>
+                        Komitmen Animate terhadap tanggung jawab sosial tercermin dalam beberapa program tahunan kami yang masih akan terus bertambah dan berkembang dengan dukungan dan semangat dari OurFocuse Animate
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="col-md-11">
+                <div class="swiper swiperOurFocuseWrapper mySwiperOurFocuse">
+                  <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer1.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/acara-3.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/acara-5.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazzer3.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazzer3.webp');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Section Beauty Impact -->
+
+<style>
+    .ourImpact{
+        padding-left: 23rem;
+        padding-right: 23rem;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+    }
+</style>
+
+<!-- Our Impact -->
+<section style="padding-top: 100px; padding-bottom: 100px;">
+    <div class="row">
+        <div class="col-sm-12 col-sm-12">
+            <div class="container-fluid px-5 ">
+                <div class="col-12 col-md-12 col-sm-12 m-auto text-center align-items-center">
+                    <h1 style="padding-left: 1.3rem; padding-right: 4rem; font-weight: bold; color: #ff5f9d;">Our Impact</h1>
+                    <br/>
+                    <p class="ourImpact">
+                       Berangkat dari tujuan utama Animate Beauty Impact terhadap tanggung jawab sosial, bersama dengan Sahabat Animate, kami melakukan aksi nyata untuk mewujudkan dunia yang lebih baik dan sejahtera.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Our Impact -->
+
+<!-- Section Sejahtera -->
+<section style="padding-top: 20px; padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-5 col-sm-12">
+            <div class="container-fluid px-5 ">
+                <div class="col-12 col-md-12 col-sm-12 m-auto text-left align-items-left">
+                    <h1 style="padding-left: 1.3rem; padding-right: 4rem; font-weight: bold; color: #ff5f9d;">Kesejahteraan & Kemajuan Perempuan</h1>
+                    <br/>
+                    <p class="ourFocuse">
+                        Memberikan akses pendidikan kesejahteraan, pelatihan, dan inisiatif untuk mendukung perempuan dalam mencapai potensi mereka
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <div class="col-md-11">
+                <div class="swiper swiperOurFocuseWrapper mySwiperOurFocuse">
+                  <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer1.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/acara-3.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/acara-5.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazzer3.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazzer3.webp');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Section Sejahtera -->
+
+<!-- Section Sejahtera -->
+<section style="padding-top: 70px; padding-bottom: 30px;">
+    <div class="row">
+        <div class="col-md-5 col-sm-12">
+            <div class="container-fluid px-5 ">
+                <div class="col-12 col-md-12 col-sm-12 m-auto text-left align-items-left">
+                    <h1 style="padding-left: 1.3rem; padding-right: 4rem; font-weight: bold; color: #ff5f9d;">Peningkatan Kehidupan</h1>
+                    <br/>
+                    <p class="ourFocuse">
+                        Mendukung komunitas, karyawan dan mitra melalui pemberdayaan diri dan inisiatif sosial yang meningkatan kesejahteraan mereka
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <div class="col-md-11">
+                <div class="swiper swiperOurFocuseWrapper mySwiperOurFocuse">
+                  <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer1.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/acara-3.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/acara-5.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazzer3.jpg');"></div>
+                        <div class="swiper-slide" style="background-image: url('img/back/bazzer3.webp');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Section Sejahtera -->
+
+<style>
+    .mySwiperHighlight {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.mySwiperHighlight .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  width: 300px !important;
+  height: 400px !important;
+  border-radius: 0PX;
+  transition: transform 0.4s ease;
+  margin-right: 20px;
+}
+
+.mySwiperHighlight .swiper-slide-active {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+</style>
+
+<!-- Section Sahabat -->
+<section style="padding-top: 6rem; padding-bottom: 6rem; background: #ff5f9d26;">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="container-fluid px-5 ">
+                <div class="swiper mySwiperHighlight">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/back/bazer1.jpg' ); margin-right: 35px; margin-left: 35px;">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/back/bazer2.jpg' ); margin-right: 35px; margin-left: 35px;">
+                    </div>
+                    <div class="swiper-slide"style="background-image: url('img/back/acara-3.jpg' ); margin-right: 35px; margin-left: 35px;">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/back/acara-5.jpg' ); margin-right: 35px; margin-left: 35px;">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/back/bazzer3.jpg' ); margin-right: 35px; margin-left: 35px;">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/back/bazer3.webp')"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2.5rem;">
+            <div class="col-sm-12 col-sm-12">
+                <div class="container-fluid px-5 ">
+                    <div class="col-12 col-md-12 col-sm-12 m-auto text-center align-items-center">
+                        <h1 style="padding-left: 1.3rem; padding-right: 4rem; font-weight: bold; color: #ff5f9d;">Our Impact</h1>
+                        <br/>
+                        <p class="ourImpact">
+                           Berkat dukungan penuh darimu, Scarlett dapat terus berkomitmen untuk menyebarkan kebaikan. Perjalanan kami masih sangat panjang dan jauh dari kata selesai. Scarlett berharap kita bisa terus bergandeng tangan, menciptakan perubahan yang berarti.<br/><br/>
+                            Terima kasih atas kepercayaanmu, Sahabat Scarlett. Mari kita melangkah lagi, menuju masa depan yang lebih cerah dan penuh harapan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</section>
+<!-- END Sahabat -->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiperHighlight = new Swiper('.mySwiperHighlight', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      centeredSlides: true,
+      initialSlide: 2, // index slide yang ingin dimulai (misal slide ke-3)
+      // loop: true,
+      grabCursor: true,
+    });
+</script>
+
+<script>
+        const swiperOurFocuse = new Swiper('.mySwiperOurFocuse', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            pagination: {
+              el: ".mySwiperOurFocuse .swiper-pagination",
+              clickable: true
+            },
+            breakpoints: {
+              768: {
+                slidesPerView: 2
+              },
+              1024: {
+                slidesPerView: 2
+              }
+            }
+          });
+    </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Cegah semua isi dropdown agar tidak menutup dropdown utama
+    document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+      menu.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    });
+
+    // Toggle submenu (Facial Wash) secara manual
+    document.querySelectorAll('.dropdown.dropend .dropdown-toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Hindari reload #
+        e.stopPropagation();
+
+        const submenu = this.nextElementSibling;
+        if (submenu && submenu.classList.contains('dropdown-menu')) {
+          // Tutup dropdown lain jika terbuka
+          document.querySelectorAll('.dropdown-menu.show').forEach(function (openMenu) {
+            if (openMenu !== submenu) {
+              openMenu.classList.remove('show');
+            }
+          });
+
+          submenu.classList.toggle('show');
+        }
+      });
+    });
+  });
+</script>
+
+ <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+      <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+  </style>
+
+  <hr/>
+
+<!-- Start Footer -->
+    <footer class="bg-white" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success  pb-3  logo"><img width="200" src="img/b_animate_white.png" style="filter: invert();"> </h2>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <!-- <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Serum Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Whitening Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Barier Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Acne Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Anti Aging Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Dark Spot Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Microbiosme Series</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Beautyverse</a></li>
+                        <li><a class="text-decoration-none" href="#">Beauty Insider</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#">Career</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-dark mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top "></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://twitter.com/"><i><img width="30" style="position: relative; bottom: 3px;" src="img/icon/shopee.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="18" style="position: relative; bottom: 3px;" src="img/icon/tokopedia.png" ></i></a>
+                        </li>
+                        <!-- <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="25" style="position: relative; bottom: 2px;" src="img/icon/lazada.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="38" style="position: relative; bottom: 2px;" src="img/icon/akulaku.png" ></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark " id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="w-100 bg-white py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-dark">
+                            Copyright &copy; 2025 Animate By Yunna Mercier
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll('.custom-dropdown-toggle');
+
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const parent = this.closest('.custom-dropdown-vertical');
+            parent.classList.toggle('open');
+          });
+        });
+      });
+    </script>
+
+
+</body>
+
+</html>

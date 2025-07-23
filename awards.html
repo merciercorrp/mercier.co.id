@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="img/b_animate.png">
-    <link rel="shortcut icon" type="image/x-icon" href="img/b_animate.png">
+    <link rel="apple-touch-icon" href="img/animate_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/animate_logo.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <style>
         .swiper-pagination-bullet-active {
@@ -96,7 +97,7 @@
                 left: 36%;
             }
         }
-        </style>
+    </style>
 
 
     <!-- Header -->
@@ -106,7 +107,7 @@
     padding-bottom: 0px !important;
     position: absolute;
     left: 2%;" href="index.html">
-            <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
+            <img class="imgWidth" style="width: 128px;" src="img/b_animate.png">
         </a>
         </div>
     <div class="container d-flex justify-content-between align-items-center" style="
@@ -117,10 +118,6 @@
         <a class="navbar-brand text-success logo h1 align-self-center" style="font-size: 28px !important; padding-bottom: 0px !important; " href="index.html">
             <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
         </a> -->
-
-        <style>
-
-  </style>
 
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
             <span class="navbar-toggler-icon"></span>
@@ -155,7 +152,6 @@
                                             </li>
                                             <li><a class="dropdown-item" href="#">Face Serum</a></li>
                                             <li><a class="dropdown-item" href="#">Sunscreen</a></li>
-                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
                                             <li><a class="dropdown-item" href="#">Face Toner</a></li>
                                             <li><a class="dropdown-item" href="#">Exfoliating</a></li>
                                             <li><a class="dropdown-item" href="#">Face Mask</a></li>
@@ -243,7 +239,7 @@
                         <a class="nav-link" href="education.html">EDUCATION</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="awards.html">AWARDS</a>
+                        <a class="nav-link" href="#">AWARDS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">ABOUT US</a>
@@ -295,651 +291,272 @@
     </div>
 
 <style>
-.team-hero-section {
-  height: 60vh;
-  background-image: url('img/back/about.jpg');
+/* Card Style */
+.blog-card {
+  position: relative;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  filter: brightness(0.85);
+  height: 412px;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
 }
 
-.circle-play-icon {
-    width: 90px;
-    height: 90px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease;
+/* Grid layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 10px 285px 20px 285px;
 }
 
-.circle-play-icon i {
-  font-size: 35px;
-  color: white;
-}
-
-.circle-play-icon:hover {
-  background-color: #ff5f9d;
-  transform: scale(1.1);
-  color: black;
-}
-
-.circle-play-icon i:hover {
-  font-size: 35px;
-  color: white;
-}
-
-.h-100 {
-    height: 104% !important;
-}
-
-.text-muted {
-    color: #3e3e3e !important;
-    line-height: 1.625;
-}
-</style>
-
-   <section class="team-hero-section">
-    <div class="container h-100">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <!-- Play Button Circle -->
-        <a href="#" class="play-button" data-bs-toggle="modal" data-bs-target="#videoModal" style="text-decoration: none;">
-          <div class="circle-play-icon">
-            <i class="fas fa-play"></i>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap Modal for Video -->
-  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-black">
-        <div class="modal-header border-0">
-          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-0">
-              <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/526UhfG0g5A?autoplay=1&mute=1&si=sjsNen-QUUp0NFis" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allow="autoplay" 
-                    allowfullscreen>
-                </iframe>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Auto Play / Stop Video Script -->
-  <script>
-    const videoModal = document.getElementById('videoModal');
-    const youtubePlayer = document.getElementById('youtubePlayer');
-    const videoURL = 'https://www.youtube.com/embed/VIDEO_ID?autoplay=1';
-
-    videoModal.addEventListener('show.bs.modal', () => {
-      youtubePlayer.setAttribute('src', videoURL);
-    });
-
-    videoModal.addEventListener('hidden.bs.modal', () => {
-      youtubePlayer.setAttribute('src', '');
-    });
-  </script>
-
-  <style>
-  .text-purple {
-      color: #ff5f9d !important;
+@media only screen and (min-width: 1200px) {
+    /* Grid layout */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 10px 175px 20px 175px;
     }
 
-    .ecosystem-section h1 {
-      font-size: 2.5rem;
+    .blog-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 312px;
+      border-radius: 0px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      transition: transform 0.3s ease;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* Grid layout */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 20px;
+      padding: 10px 285px 20px 285px;
     }
 
-    img.rounded-4 {
-      border-radius: 1rem;
+    .blog-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 412px;
+      border-radius: 0px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      transition: transform 0.3s ease;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 20px;
+      padding: 10px 0px 20px 0px;
     }
 
-    .ceo-section {
-  background-color: #f8f3fc;
-}
-
-.text-purple {
-  color: #ff5f9d !important;
-}
-
-.rounded-4 {
-  border-radius: 1rem;
-}
-
-.quote-section {
-  background-color: #ffffff;
-}
-
-.quote-text {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto;
-  color: #8224e3; /* ungu Animate */
-}
-
-.journey-section {
-  background-color: #ffffff;
-}
-
-.text-purple {
-  color: #8224e3;
-}
-
-.journey-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
+    .blog-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 412px;
+      border-radius: 0px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      transition: transform 0.3s ease;
+    }
 }
 
 
-  </style>
-
-  <!-- Section Start -->
-  <section class="ecosystem-section py-5" style="background-color: #fd7fae7d;">
-    <div class="container text-center" style="    max-width: 900px;">
-      <h1 class="fw-bold mb-3" style=" background: linear-gradient(133deg, rgba(255, 95, 157, 1) 0%, rgba(255, 95, 157, 1) 63%, #FFE6EB 64%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; line-height: 1.5; font-size: 54px; ">
-        Level Up Your Beauty with<br>
-        <span style=" background: linear-gradient(133deg, rgba(255, 95, 157, 1) 0%, rgba(255, 95, 157, 1) 79%, #FFE6EB 83%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; ">Animate Beauty Dreams</span>
-      </h1>
-      <p class="lead text-muted" style="font-size: 15px;">
-        Animate merupakan <em>beauty brand</em> lokal terkemuka sejak 2017 yang berhasil menciptakan 
-        <em>body & personal care</em> melalui kreativitas, teknologi, dan inovasi terkini. Kepercayaan Sahabat Animate untuk cantik 
-        bersama menjadikan salah satu <em>top brand</em> favorit di kategori body lotion dan parfum di Indonesia.
-      </p>
-      <p class="fw-medium mt-3" style="line-height: 1.625;">
-        Saatnya <em class="fw-bold">Level Up Your Beauty</em> bersama Animate, wujudkan cantik versi terbaikmu!
-      </p>
-    </div>
-
-    <!-- Content 2 Column -->
-    <div class="container" style="padding: 90px 90px 45px 90px;">
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0" style="text-align: center;">
-          <img src="img/Bu-yunna.png" alt="Co-Founder" class="img-fluid rounded-4 shadow" width="260">
-        </div>
-        <div class="col-md-6">
-          <h2 class="text-purple fw-bold">
-            GREETINGS FROM<br>OUR CO-FOUNDER
-          </h2>
-          <small class="text-muted">Her Perspective</small>
-          <p class="mt-3 text-dark">
-            Setiap orang memiliki <em>beauty goals</em> yang berbeda seiring berjalannya waktu.
-          </p>
-          <p class="text-dark">
-            Demi mendukung <em>beauty goals</em> tersebut, Animate terus menciptakan formula produk-produk 
-            <em>beauty & personal care</em> terbaik. Animate percaya bahwa perjalanan dalam menemukan versi cantik 
-            dirimu dapat menjadi pengalaman yang seru.
-          </p>
-          <p class="text-dark">
-            Coba dan temukan cantik terbaikmu dengan rangkaian produk Animate!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> 
-
-  <!-- Section CEO -->
-<!--     <section class="ceo-section py-5">
-      <div class="container">
-        <div class="row align-items-center flex-md-row flex-column-reverse">
-          <div class="col-md-6 text-md-start text-center mt-4 mt-md-0">
-            <h2 class="text-purple fw-bold">
-              GREETINGS FROM<br>OUR CEO
-            </h2>
-            <small class="text-muted">His Perspective</small>
-            <p class="mt-3 text-dark">
-              Animate percaya perlu adanya produk yang tepat untuk mengakomodasi kebutuhan perawatan kulit, 
-              sehingga menjadikan Animate unggul di <em>local beauty</em> Indonesia
-            </p>
-          </div>
-          <div class="col-md-6 text-center">
-            <img src="img/ceo.png" alt="CEO" class="img-fluid rounded-4 shadow" />
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Section Quote -->
-    <section class="quote-section py-5 text-center">
-      <div class="container">
-        <blockquote class="quote-text fw-semibold fst-italic text-purple">
-          “Animate is a beauty company focused on innovation, quality, and sustainability. We offer premium skincare products, professional beauty clinic services, and cosmetic manufacturing. Committed to balancing profit, human well-being, and environmental impact, we aim to provide beauty solutions that benefit both customers and the world responsibly.”
-        </blockquote>
-        <div class="mt-4">
-          <h6 class="fw-bold mb-0">Yunna Mercier</h6>
-          <small class="text-muted">Co-Founder</small>
-        </div>
-      </div>
-    </section>
-
-
-    <style>
-.mySwiper-testimoni {
-  padding: 30px 0;
+.blog-card:hover {
+  transform: scale(1.03);
 }
 
-.mySwiper-testimoni .testimonial-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  height: auto;
+.blog-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+  padding: 15px;
+  width: 100%;
+  color: #fff;
 }
 
-.mySwiper-testimoni .testimonial-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  object-fit: cover;
-}
-
-.mySwiper-testimoni h4 {
-  margin: 0;
-  font-size: 1rem;
+.blog-category {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #111;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
   font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
 }
 
-.mySwiper-testimoni .position {
-  font-size: 0.875rem;
-  color: gray;
-  margin-bottom: 10px;
+.blog-title {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-.mySwiper-testimoni .quote {
-  font-style: italic;
-  color: #9b59b6;
-  font-size: 0.95rem;
+.blog-meta {
+  font-size: 13px;
+  margin-top: 6px;
+  color: #eee;
+}
+
+/* Pagination style */
+.pagination-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.pagination {
+  display: inline-flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.page-item {
+  border-radius: 8px;
+}
+
+.page-link {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 0px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.page-item.active .page-link {
+    background-color: #ff5f9d;
+    color: #ffffff;
+    font-weight: bold;
+    border-color: #fca1cf;
+}
+
+.page-item:hover .page-link:not(.active) {
+  background-color: #f0f0f0;
+}
+
+.page-item.disabled .page-link {
+  color: #ccc;
+  pointer-events: none;
+  border-color: #f0f0f0;
 }
 
 </style>
 
-    <!-- Section: Greetings from BOD -->
-<section class="bod-section py-5">
-  <div class="container">
-    <h3 class="fw-bold text-center mb-4">Greetings from our BOD</h3>
+<section style="padding-top: 90px; padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="container-fluid px-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                    <div class="blog-grid">
+                        <a href="awards-detail4.html">
+                          <div class="blog-card" style="background-image: url('img/news/news-4.jpeg');">
+                            <div class="blog-content">
+                              <span class="blog-category">AWARDS</span>
+                              <h3 class="blog-title">Animate Raih Penghargaan Indonesia Best Selling Brand in E-Commerce Market 2024 dari Majalah SWA</h3>
+                              <p class="blog-meta">By Animate • Januari 28, 2025</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="awards-detail3.html">
+                          <div class="blog-card" style="background-image: url('img/news/news-3.jpg');">
+                            <div class="blog-content">
+                              <span class="blog-category">EVENTS</span>
+                              <h3 class="blog-title">Brand Animate Hadir di Jakarta Fair 2024: Promo Spesial dan Hadiah Menarik</h3>
+                              <p class="blog-meta">By Animate • Oktober 28, 2024</p>
+                            </div>
+                          </div>
+                      </a>
+                      
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                    <div class="blog-grid">
+                        <a href="awards-detail2.html">
+                          <div class="blog-card" style="background-image: url('img/news/news-2.jpg');">
+                            <div class="blog-content">
+                              <span class="blog-category">ACARA</span>
+                              <h3 class="blog-title">Kuis Family 100 Yunna Mercier dan Michael Mercier Berhasil Raih Kemenangan</h3>
+                              <p class="blog-meta">By Animate • Oktober 28, 2024</p>
+                            </div>
+                          </div>
+                        </a>
+                      <a href="awards-detail1.html">
+                      <div class="blog-card" style="background-image: url('img/news/news-1.jpg');">
+                        <div class="blog-content">
+                          <span class="blog-category">AWARDS</span>
+                          <h3 class="blog-title">Animate Meraih Penghargaan Marketeers Brand of the Year 2024</h3>
+                          <p class="blog-meta">By Animate • Juni 27, 2024</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              </div>
 
-    <div class="swiper mySwiper-testimoni">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Randy Saputra</h4>
-          <p class="position">Direktur</p>
-          <p class="quote">“Dengan memberikan inovasi dan produk berkualitas, Animate dipandang sebagai salah satu brand terkuat di tengah ketatnya kompetisi industri local beauty.”</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide testimonial-card">
-          <img src="img/back/model.webp" class="testimonial-avatar" />
-          <h4>Ferry Arief Sunandar</h4>
-          <p class="position">Chief, Financial Officer</p>
-          <p class="quote">“Animate punya misi untuk membantu meningkatkan ekonomi di Indonesia, salah satunya dengan mengadakan program Reseller yang sangat impactful.”</p>
-        </div>
-
-        <!-- Tambah slide lainnya jika ada -->
-      </div>
-
-      <!-- Navigasi -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  var swiperTestimoni = new Swiper(".mySwiper-testimoni", {
-    slidesPerView: 5,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-     breakpoints: {
-     0: {
-      slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 1.5,
-    },
-    768: {
-      slidesPerView: 2.5,
-    },
-    1024: {
-      slidesPerView: 3.5,
-    },
-    1280: {
-      slidesPerView: 4,
-    }
-  }
-  });
-</script>
 
     <script>
-  const swiperbod = new Swiper(".bod-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 4,
-      }
+  const maxLength = 64; // batas karakter
+
+  // Ambil semua elemen dengan class 'blog-title'
+  document.querySelectorAll('.blog-title').forEach(function(el) {
+    const text = el.textContent.trim();
+    if (text.length > maxLength) {
+      el.textContent = text.substring(0, maxLength) + '...';
     }
   });
 </script>
 
-<style>
- .timeline-wrapper {
-      position: relative;
-    }
 
-    .timeline-line {
-        position: absolute;
-        top: 0px;
-        bottom: 50px;
-        left: 30px;
-        width: 2px;
-        background-color: #ff5f9d;
-        z-index: 0;
-    }
-
-    .nav-pills .nav-link {
-      color: #333;
-      font-weight: 600;
-      text-align: left;
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 20px;
-      background: white;
-    }
-
-    .nav-pills .nav-link::before {
-      content: "";
-      position: absolute;
-      left: 0.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #fff;
-      border: 2px solid #ccc;
-      z-index: 1;
-    }
-
-    .nav-pills .nav-link.active::before {
-      background-color: #fedae7;
-      border-color: #212529;
-    }
-
-    .nav-pills .nav-link.active {
-          background-color: #ff5f9d;
-          color: rgb(255, 255, 255);
-    }
-
-    .tab-content .tab-pane {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .tab-content h5 {
-      color: #7e57c2;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .tab-content ul {
-      padding-left: 1.2rem;
-    }
-
-    @media (max-width: 768px) {
-      .nav.flex-column {
-        flex-direction: row !important;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
-
-      .nav-pills .nav-link {
-        flex: 1 0 auto;
-        text-align: center;
-        padding: 0.75rem 1rem;
-      }
-
-      .timeline-line {
-        display: none;
-      }
-
-      .nav-pills .nav-link::before {
-        content: "";
-        position: absolute;
-        left: 0.3rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        z-index: 1;
-    }
-</style>
-
-<section class="py-5">
-<h3 class="fw-bold text-center mb-5">Innovation Journey</h3>
-
-<div class="container timeline-wrapper">
-  <div class="timeline-line"></div>
-  <div class="row">
-    <!-- Pills Navigation -->
-    <div class="col-md-2 mb-4">
-      <div class="nav flex-md-column nav-pills" id="year-tabs" role="tablist" aria-orientation="vertical">
-        <!-- <button class="nav-link active" id="tab-2017" data-bs-toggle="pill" data-bs-target="#year-2017" type="button" role="tab">2017</button>
-        <button class="nav-link" id="tab-2018" data-bs-toggle="pill" data-bs-target="#year-2018" type="button" role="tab">2018</button>
-        <button class="nav-link" id="tab-2019" data-bs-toggle="pill" data-bs-target="#year-2019" type="button" role="tab">2019</button>
-        <button class="nav-link" id="tab-2020" data-bs-toggle="pill" data-bs-target="#year-2020" type="button" role="tab">2020</button> -->
-        <button class="nav-link active" id="tab-2021" data-bs-toggle="pill" data-bs-target="#year-2021" type="button" role="tab">2021</button>
-        <button class="nav-link" id="tab-2022" data-bs-toggle="pill" data-bs-target="#year-2022" type="button" role="tab">2022</button>
-        <button class="nav-link" id="tab-2023" data-bs-toggle="pill" data-bs-target="#year-2023" type="button" role="tab">2023</button>
-        <button class="nav-link" id="tab-2024" data-bs-toggle="pill" data-bs-target="#year-2024" type="button" role="tab">2024</button>
-        <button class="nav-link" id="tab-2025" data-bs-toggle="pill" data-bs-target="#year-2025" type="button" role="tab">2025</button>
-      </div>
+    <!-- Pagination -->
+    <div class="pagination-container">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a href="#" class="page-link">←</a>
+        </li>
+        <li class="page-item active">
+          <a href="#" class="page-link">1</a>
+        </li>
+        <!-- <li class="page-item">
+          <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">3</a>
+        </li> -->
+        <li class="page-item disabled">
+          <a href="#" class="page-link">→</a>
+        </li>
+      </ul>
     </div>
-
-    <!-- Content -->
-    <div class="col-md-10">
-      <div class="tab-content" id="year-tabs-content">
-        <section class="tab-pane fade show active" id="year-2021" role="tabpanel">
-          <h5>Launching</h5>
-          <ul>
-            <li>5 Varian Animate New Body Lotion Fragrance Brightening Body Lotion Bright Mood Booster</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2022" role="tabpanel">
-          <ul>
-            <li>Perfume La Foret Fairy</li>
-            <li>Perfume Wonderland</li>
-            <li>Perfume Velvet Rouge</li>
-            <li>Perfume Golden Elixir</li>
-            <li>Perfume Biru Samudra</li>
-            <li>Perfume Purple Kiss</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2023" role="tabpanel">
-          <ul>
-            <li>Perfume Garden of Whisper</li>
-            <li>Perfume Jolly</li>
-            <li>Shimmer Liquid Body Perfume Kilau Samudra</li>
-            <li>Body Serum Tube Charming</li>
-            <li>Body Serum Tube Jolly</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2024" role="tabpanel">
-          <ul>
-            <li>Revive Glow Elixir Red Exfo Intensive Peeling Solution</li>
-            <li>Brightly Ever After Essense Foam Toner</li>
-            <li>Aqua Reset & Barrier Gel Moisturizer</li>
-            <li>Brightly and Acne Cloud Facial Foam</li>
-            <li>AHA Body Serum</li>
-          </ul>
-        </section>
-
-        <section class="tab-pane fade" id="year-2025" role="tabpanel">
-          <p>Content for 2022 (coming soon)</p>
-        </section>
-
-      </div>
-    </div>
-  </div>
-</div>
 </section>
 
-
-
-
-
-
-
-<style>
-    .mission-section {
-  background-color: #ffffff;
-}
-
-.mission-box {
-  background-color: #fef6ff;
-  border: 1px solid #eee;
-}
-
-.text-purple {
-  color: #8224e3;
-}
-
-.mission-section img {
-  border-radius: 16px;
-  max-width: 100%;
-  object-fit: cover;
-}
-</style>
-
-<!-- Section: Our Missions -->
-<section class="mission-section py-5">
-  <div class="container">
-    <div class="row align-items-center gy-4">
-      <!-- Gambar -->
-      <div class="col-lg-6">
-        <img src="img/back/BANNER-5.png" alt="Our Mission" class="img-fluid rounded-4 shadow-sm" />
-      </div>
-
-      <style>
-        .vandm li {
-          font-size: 18px !important;
-          margin-bottom: 12px;
-          line-height: 1.68;
-        }
-      </style>
-
-      <!-- Konten -->
-  <div class="col-lg-6">
-  <div class="mission-box p-4 rounded-4">
-    <h3 class="fw-bold text-purple">Vision and Mission</h3>
-    <hr />
-    <ol class="vandm ps-3">
-      <li>Menjadi Top 3 brand kecantikan di Middle Low Market di 2025</li>
-      <li>Percaya kepada kekuasaan Tuhan Yang Maha Esa. Menghidupkan kepercayaan diri wanita Indonesia. Memberikan “Service Excellence”.</li>
-      <li>Up to Date Brand Development. Menjadi Rumah untuk Talenta Terbaik. Menjadi Perusahaan tingkat dunia.</li>
-      <li>Mendapatkan 10% Market Share dari penjualan produk kecantikan Indonesia.</li>
-      <li>Produk kecantikan Indonesia.</li>
-    </ol>
-  </div>
-</div>
-</div>
-</section>
-
-
-
-  <!-- Start Footer -->
+<!-- Start Footer -->
     <footer class="bg-white" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
@@ -951,10 +568,16 @@
                             <i class="fas fa-map-marker-alt fa-fw"></i>
                             123 Consectetur at ligula 10660
                         </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
                         </li> -->
                     </ul>
                 </div>
-
                 <div class="col-md-4 pt-5">
                     <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
                     <ul class="list-unstyled text-dark footer-link-list">
@@ -968,7 +591,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4 pt-5">
+                 <div class="col-md-4 pt-5">
                     <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
                     <ul class="list-unstyled text-dark footer-link-list">
                         <li><a class="text-decoration-none" href="#">Home</a></li>

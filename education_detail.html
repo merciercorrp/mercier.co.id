@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animate By Yunna Mercier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="img/b_animate.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/b_animate.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <style>
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opac                                                                                                    ity, 1);
+            background: background: #ff5f9d;
+            width: 20px;
+            border-radius: 0px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: #ff5f9d;
+        }
+        .swiper-pagination-bullet {
+            border-radius: 0px;
+            width: 50px;
+            height: 5px;
+        }
+
+        .custom-dropdown-vertical .toggle-icon {
+          float: right;
+          transition: transform 0.3s ease;
+        }
+
+        .custom-dropdown-vertical.open .toggle-icon {
+          transform: rotate(180deg);
+        }
+
+        .custom-dropdown-menu {
+          display: none;
+          margin: 0;
+          padding-left: 1rem;
+        }
+
+        .custom-dropdown-vertical.open .custom-dropdown-menu {
+          display: block;
+        }
+
+        /* Optional: spacing between items */
+        .dropdown-item {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+
+        .custom-dropdown-menu {
+          list-style: none; /* HILANGKAN BULLET */
+          padding-left: 1rem; /* jika ingin ada jarak ke kiri */
+          margin: 0;
+        }
+
+        .logobyAnimate {
+            font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logobyAnimate {
+                font-size: 28px !important;
+                padding-bottom: 0px !important;
+                position: absolute;
+                left: 36%;
+            }
+        }
+        </style>
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="position: fixed; width: 100%; z-index: 999; background: white;">
+        <div class=" d-flex align-items-left">
+                    <a class="navbar-brand text-success logo h1 align-self-center" style="    font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;" href="index.html">
+                    <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
+                </a>
+                </div>
+            <div class="container d-flex justify-content-between align-items-center" style="
+            padding-bottom: 10px;
+            padding-top: 10px;
+        ">
+
+        <style>
+
+        </style>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+
+                    <!-- SHOP ALL MEGA MENU -->
+                    <li class="nav-item dropdown position-static" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <div class="dropdown-menu w-100 mt-0 border-0 shadow" aria-labelledby="megaDropdown" style="left: 0; right: 0; background-color: #fef7ff;">
+                            <div class="container py-4">
+                                <div class="row">
+                                    <!-- Face -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Face</h6>
+                                        <ul class="list-unstyled">
+                                          <!-- Facial Wash Toggle -->
+                                          <li class="custom-dropdown-vertical">
+                                              <a href="#" class="custom-dropdown-toggle dropdown-item" id="dropdownFacialWash">
+                                                Facial Wash <span class="toggle-icon">▾</span>
+                                              </a>
+                                              <ul class="custom-dropdown-menu" aria-labelledby="dropdownFacialWash">
+                                                <li><a class="dropdown-item" href="#">Brightly Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Age Delay</a></li>
+                                              </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Face Serum</a></li>
+                                            <li><a class="dropdown-item" href="#">Sunscreen</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                            <li><a class="dropdown-item" href="#">Exfoliating</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Mask</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Moisturizer</a></li>
+                                            <li><a class="dropdown-item" href="#">Lip Treatment</a></li>
+                                            <li><a class="dropdown-item" href="#">Eye Treatment</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Body -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Body</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Body Lotion</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Serum</a></li>
+                                            <li><a class="dropdown-item" href="#">Shower Scrub</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Cream</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Scrub</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Parfum -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Parfum</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Eau de Parfum</a></li>
+                                            <li><a class="dropdown-item" href="#">Extrait de Parfum</a></li>
+                                            <li><a class="dropdown-item" href="#">Shimmer Liquid Body Perfume</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Hair -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Hair</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                                            <li><a class="dropdown-item" href="#">Conditioner</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bundling -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Bundling</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Bundling</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Skin Concern -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Skin Concern</h6>
+                                        <ul class="list-unstyled">
+                                            <li><strong>Dull Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Brightly Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Acne Prone Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Anti Aging</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Age Delay Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Oily Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                    <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<section style="padding-top: 6rem;">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="container-fluid px-5">
+
+        <div style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- Kategori -->
+        <p class="text-uppercase fw-bold text-secondary mb-2">AWARDS</p>
+
+        <!-- Judul Artikel -->
+        <h1 class="fw-bold mb-4" style="max-width: 800px;">
+          Animate Meraih Penghargaan Marketeers Brand of the Year 2024
+        </h1>
+
+        <!-- Penulis & Tanggal -->
+        <p class="fw-medium text-dark mb-5">
+          Zhafirah <br>
+          <span class="text-muted">Juni 27, 2024</span>
+        </p>
+
+    </div>
+
+        <!-- Gambar Artikel -->
+        <div class="text-center mb-5">
+          <img src="img/product/dummy-1.webp" class="img-fluid rounded" alt="cover" width="568" height="378">
+        </div>
+
+        <!-- Konten Artikel -->
+        <div class="text-article" style="max-width: 900px; margin: 0 auto;">
+            <p>Prestasi Gemilang untuk Brand Kecantikan Lokal</p>
+            <p>Animate Skincare, sebuah brand kecantikan yang dikenal dengan inovasi dan kualitas produknya, kembali mencatatkan prestasi membanggakan. Pada ajang bergengsi Marketeers Omni Brand of the Year 2024, Animate Skincare berhasil meraih penghargaan sebagai salah satu brand terbaik tahun ini. Penghargaan ini menjadi bukti nyata atas komitmen Animate dalam memberikan produk dan layanan terbaik kepada konsumen di Indonesia.</p>
+            <p>Penghargaan ini diterima langsung oleh dua tokoh penting di balik kesuksesan Animate, yaitu Yunna Mercier selaku brand owner dan Michael Mercier, CEO dari Mercier Corp. Dalam acara yang diadakan di Jakarta tersebut, Animate menjadi sorotan karena berhasil unggul di tengah persaingan industri kecantikan yang semakin kompetitif.</p>
+            <p>Dedikasi dalam Inovasi dan Kualitas</p>
+            <p>Animate Skincare telah membangun reputasinya sebagai brand yang selalu berinovasi. Dengan menghadirkan produk-produk berkualitas tinggi yang dirancang sesuai kebutuhan kulit masyarakat Indonesia, Animate mampu memenangkan hati banyak konsumen. Beberapa produk unggulan mereka, seperti serum anti-aging dan moisturizer berbahan alami, mendapatkan respons positif dari berbagai kalangan, termasuk beauty enthusiast dan dermatologis.</p>
+            <p>Michael Mercier, dalam pidatonya, menyampaikan bahwa penghargaan ini merupakan hasil kerja keras seluruh tim Animate. “Kami selalu percaya bahwa konsistensi dalam inovasi dan fokus pada kebutuhan konsumen adalah kunci utama keberhasilan kami. Penghargaan ini bukan hanya untuk perusahaan kami, tetapi juga untuk semua konsumen setia yang selalu mendukung kami,” ujarnya.</p>
+            <p>Membangun Koneksi Lebih Dekat dengan Konsumen</p>
+            <p>Salah satu faktor yang membuat Animate unggul adalah pendekatan omni-channel yang mereka terapkan. Animate tidak hanya hadir di gerai offline, tetapi juga memperkuat eksistensinya di platform digital. Dengan strategi pemasaran yang terintegrasi, seperti kampanye media sosial, kolaborasi dengan influencer, serta kemudahan pembelian di e-commerce, Animate mampu menjangkau audiens yang lebih luas.</p>
+            <p>Selain itu, Animate juga aktif mengedukasi konsumen tentang pentingnya perawatan kulit melalui berbagai program, seperti webinar, artikel blog, dan sesi konsultasi online. Langkah ini menunjukkan komitmen mereka untuk tidak hanya menjual produk, tetapi juga memberikan nilai tambah kepada konsumen.</p>
+            <p>Mendorong Standar Baru dalam Industri Kecantikan</p>
+            <p>Dalam beberapa tahun terakhir, industri kecantikan di Indonesia mengalami pertumbuhan pesat. Namun, persaingan yang ketat menuntut setiap brand untuk terus berinovasi dan menghadirkan diferensiasi. Animate Skincare berhasil menjawab tantangan ini dengan menjadi pelopor dalam menggunakan bahan-bahan alami yang ramah lingkungan serta menerapkan teknologi modern dalam proses produksinya.</p>
+            <p>Yunna Mercier menyatakan, “Kami ingin menjadi brand yang tidak hanya memberikan hasil terbaik bagi kulit, tetapi juga mendukung keberlanjutan lingkungan. Oleh karena itu, kami terus berupaya mengurangi jejak karbon dengan menggunakan kemasan yang dapat didaur ulang dan bahan-bahan yang bersumber secara etis.”</p>
+            <p>Penghargaan yang Menginspirasi</p>
+            <p>Pengakuan dari Marketeers ini diharapkan dapat menjadi inspirasi bagi brand lokal lainnya untuk terus berkembang dan berkompetisi di tingkat nasional maupun internasional. Animate Skincare telah membuktikan bahwa dengan visi yang jelas, kerja keras, dan keberanian untuk berinovasi, sebuah brand lokal mampu meraih pencapaian yang luar biasa.</p>
+            <p>Sebagai bagian dari Mercier Corp, Animate juga mendapat dukungan penuh dalam hal pengembangan bisnis dan sumber daya. Hal ini memungkinkan mereka untuk terus meningkatkan kualitas produk dan layanan yang mereka tawarkan.</p>
+            <p>Langkah Ke Depan</p>
+            <p>Setelah meraih penghargaan ini, Animate Skincare tidak berpuas diri. Mereka telah merencanakan berbagai inovasi baru yang akan diluncurkan dalam waktu dekat. Selain itu, mereka juga akan terus memperkuat kehadiran di pasar internasional sebagai bagian dari misi untuk menjadi perusahaan kecantikan tingkat dunia.</p>
+            <p>“Kami ingin terus membawa nama Indonesia ke kancah global. Dengan semangat dan dukungan yang kami miliki, kami yakin Animate dapat menjadi brand kecantikan yang dikenal di seluruh dunia,” tambah Michael Mercier.</p>
+            <p>Penghargaan Marketeers Brand of the Year 2024 ini menjadi tonggak sejarah penting bagi Animate Skincare. Dengan semangat inovasi dan dedikasi untuk memberikan yang terbaik, Animate siap melangkah lebih jauh dan menjadi kebanggaan Indonesia di industri kecantikan global.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="row g-4 mt-5">
+
+          <!-- CARD 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100 border-0">
+              <img src="img/product/dummy-1.webp" class="card-img-top" alt="Jerawat 1" style="height:225px; object-fit:cover;">
+              <div class="card-body px-0">
+                <small class="text-muted">2025/06/04</small>
+                <h6 class="card-title mt-1" style="font-size: 16px; font-weight: bold;">Bye Jerawat! Panduan Perawatan Kulit Berjerawat dan Rekomendasi Produknya</h6>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100 border-0">
+              <img src="img/product/dummy-1.webp" class="card-img-top" alt="Jerawat 2" style="height:225px; object-fit:cover;">
+              <div class="card-body px-0">
+                <small class="text-muted">2025/06/04</small>
+                <h6 class="card-title mt-1" style="font-size: 16px; font-weight: bold;">Yuk, Kenali Penyebab Jerawat Biar Perawatan Kulitmu Makin Tepat!</h6>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100 border-0">
+              <img src="img/product/dummy-1.webp" class="card-img-top" alt="Jenis Jerawat" style="height:225px; object-fit:cover;">
+              <div class="card-body px-0">
+                <small class="text-muted">2025/06/04</small>
+                <h6 class="card-title mt-1" style="font-size: 16px; font-weight: bold;">Kenalan Sama Jenis-Jenis Jerawat Biar Nggak Makin Gawat!</h6>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100 border-0">
+              <img src="img/product/dummy-1.webp" class="card-img-top" alt="Menghilangkan Jerawat" style="height:225px; object-fit:cover;">
+              <div class="card-body px-0">
+                <small class="text-muted">2025/06/04</small>
+                <h6 class="card-title mt-1" style="font-size: 16px; font-weight: bold;">Cara Menghilangkan Jerawat Secara Ampuh Biar Kulitmu Balik Glowing</h6>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+    /* Pagination style */
+    .pagination-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .pagination {
+      display: inline-flex;
+      list-style: none;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .page-item {
+      border-radius: 8px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 0px;
+      border: 1px solid #e0e0e0;
+      background-color: white;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .page-item.active .page-link {
+        background-color: #ff5f9d;
+        color: #ffffff;
+        font-weight: bold;
+        border-color: #fca1cf;
+    }
+
+    .page-item:hover .page-link:not(.active) {
+      background-color: #f0f0f0;
+    }
+
+    .page-item.disabled .page-link {
+      color: #ccc;
+      pointer-events: none;
+      border-color: #f0f0f0;
+    }
+</style>
+
+<!-- Pagination -->
+<div class="pagination-container">
+      <ul class="pagination">
+        <!-- <li class="page-item disabled">
+          <a href="#" class="page-link">←</a>
+        </li> -->
+        <li class="page-item active">
+          <a href="education.html" class="page-link">Show More</a>
+        </li>
+        <!-- <li class="page-item">
+          <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">3</a>
+        </li> -->
+        <!-- <li class="page-item disabled">
+          <a href="#" class="page-link">→</a>
+        </li> -->
+      </ul>
+    </div>
+</section>
+
+<style>
+  .position-relative img {
+    transition: transform 0.3s ease;
+  }
+  .position-relative:hover img {
+    transform: scale(1.05);
+  }
+</style>
+
+
+
+<!-- Start Footer -->
+    <footer class="bg-white" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success  pb-3  logo"><img width="200" src="img/b_animate_white.png" style="filter: invert();"> </h2>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Serum Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Whitening Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Barier Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Acne Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Anti Aging Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Dark Spot Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Microbiosme Series</a></li>
+                    </ul>
+                </div>
+
+                 <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Education</a></li>
+                        <li><a class="text-decoration-none" href="#">Awards</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-dark mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top "></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://twitter.com/"><i><img width="30" style="position: relative; bottom: 3px;" src="img/icon/shopee.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="18" style="position: relative; bottom: 3px;" src="img/icon/tokopedia.png" ></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-white py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-dark">
+                            Copyright &copy; 2025 Animate By Yunna Mercier
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll('.custom-dropdown-toggle');
+
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const parent = this.closest('.custom-dropdown-vertical');
+            parent.classList.toggle('open');
+          });
+        });
+      });
+    </script>
+
+
+</body>
+
+</html>

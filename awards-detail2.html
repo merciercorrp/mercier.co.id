@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animate By Yunna Mercier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="img/b_animate.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/b_animate.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <style>
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: background: #ff5f9d;
+            width: 20px;
+            border-radius: 0px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: #ff5f9d;
+        }
+        .swiper-pagination-bullet {
+            border-radius: 0px;
+            width: 50px;
+            height: 5px;
+        }
+
+        .custom-dropdown-vertical .toggle-icon {
+          float: right;
+          transition: transform 0.3s ease;
+        }
+
+        .custom-dropdown-vertical.open .toggle-icon {
+          transform: rotate(180deg);
+        }
+
+        .custom-dropdown-menu {
+          display: none;
+          margin: 0;
+          padding-left: 1rem;
+        }
+
+        .custom-dropdown-vertical.open .custom-dropdown-menu {
+          display: block;
+        }
+
+        /* Optional: spacing between items */
+        .dropdown-item {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+
+        .custom-dropdown-menu {
+          list-style: none; /* HILANGKAN BULLET */
+          padding-left: 1rem; /* jika ingin ada jarak ke kiri */
+          margin: 0;
+        }
+
+        .logobyAnimate {
+            font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logobyAnimate {
+                font-size: 28px !important;
+                padding-bottom: 0px !important;
+                position: absolute;
+                left: 36%;
+            }
+        }
+        </style>
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="position: fixed; width: 100%; z-index: 999; background: white;">
+        <div class=" d-flex align-items-left">
+                    <a class="navbar-brand text-success logo h1 align-self-center" style="    font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;" href="index.html">
+                    <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
+                </a>
+                </div>
+            <div class="container d-flex justify-content-between align-items-center" style="
+            padding-bottom: 10px;
+            padding-top: 10px;
+        ">
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+
+                    <!-- SHOP ALL MEGA MENU -->
+                    <li class="nav-item dropdown position-static" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <div class="dropdown-menu w-100 mt-0 border-0 shadow" aria-labelledby="megaDropdown" style="left: 0; right: 0; background-color: #fef7ff;">
+                            <div class="container py-4">
+                                <div class="row">
+                                    <!-- Face -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Face</h6>
+                                        <ul class="list-unstyled">
+                                          <!-- Facial Wash Toggle -->
+                                          <li class="custom-dropdown-vertical">
+                                              <a href="#" class="custom-dropdown-toggle dropdown-item" id="dropdownFacialWash">
+                                                Facial Wash <span class="toggle-icon">▾</span>
+                                              </a>
+                                              <ul class="custom-dropdown-menu" aria-labelledby="dropdownFacialWash">
+                                                <li><a class="dropdown-item" href="#">Brightly Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Age Delay</a></li>
+                                              </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Face Serum</a></li>
+                                            <li><a class="dropdown-item" href="#">Sunscreen</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                            <li><a class="dropdown-item" href="#">Exfoliating</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Mask</a></li>
+                                            <li><a class="dropdown-item" href="#">Face Moisturizer</a></li>
+                                            <li><a class="dropdown-item" href="#">Lip Treatment</a></li>
+                                            <li><a class="dropdown-item" href="#">Eye Treatment</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Body -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Body</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Body Lotion</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Serum</a></li>
+                                            <li><a class="dropdown-item" href="#">Shower Scrub</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Cream</a></li>
+                                            <li><a class="dropdown-item" href="#">Body Scrub</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Parfum -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Parfum</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Eau de Parfum</a></li>
+                                            <li><a class="dropdown-item" href="#">Extrait de Parfum</a></li>
+                                            <li><a class="dropdown-item" href="#">Shimmer Liquid Body Perfume</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Hair -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Hair</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                                            <li><a class="dropdown-item" href="#">Conditioner</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bundling -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Bundling</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Bundling</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Skin Concern -->
+                                    <div class="col-md-2">
+                                        <h6 class="fw-bold">Skin Concern</h6>
+                                        <ul class="list-unstyled">
+                                            <li><strong>Dull Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Brightly Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Acne Prone Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Anti Aging</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Age Delay Series</a></li>
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Oily Skin</strong>
+                                                <ul class="list-unstyled ps-3">
+                                                    <li><a class="dropdown-item" href="#">Facial Wash</a></li>
+                                                    <li><a class="dropdown-item" href="#">Face Toner</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<section style="padding-top: 6rem; padding-bottom: 6rem; ">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="container-fluid px-5">
+
+        <div style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- Kategori -->
+        <p class="text-uppercase fw-bold text-secondary mb-2">ACARA</p>
+
+        <!-- Judul Artikel -->
+        <h1 class="fw-bold mb-4" style="max-width: 800px;">
+          Yunna Mercier dan Michael Mercier Berhasil Raih Kemenangan di Kuis Family 100
+        </h1>
+
+        <!-- Penulis & Tanggal -->
+        <p class="fw-medium text-dark mb-5">
+          Zhafirah <br>
+          <span class="text-muted">Oktober 24, 2024</span>
+        </p>
+
+    </div>
+
+        <!-- Gambar Artikel -->
+       <div class="text-center mb-5">
+          <img src="img/news/news-2.jpg" class="img-fluid rounded" alt="cover" width="568" height="378">
+        </div>
+
+        <!-- Konten Artikel -->
+        <div class="text-article" style="max-width: 900px; margin: 0 auto;">
+          <p>Keseruan Keluarga Mercier di Layar Televisi</p>
+<p>Kehidupan pasangan suami istri Yunna Mercier dan Michael Mercier kembali menjadi sorotan publik, kali ini dalam suasana yang berbeda. Dikenal sebagai sosok inspiratif di dunia bisnis kecantikan, Yunna dan Michael baru saja mencatatkan pengalaman tak terlupakan dengan tampil di acara kuis legendaris, Family 100. Tak hanya sekadar berpartisipasi, mereka berhasil melaju hingga babak final dan membawa pulang kemenangan.</p>
+<p>Acara ini dipandu oleh pembawa acara ternama Irfan Hakim, yang dikenal dengan gaya pembawaannya yang ceria dan interaktif. Selain itu, keikutsertaan Aldi Taher sebagai anggota tim mereka menambah bumbu keseruan. Dengan kombinasi pengetahuan, strategi, dan kerjasama yang solid, tim ini menjadi salah satu bintang di episode tersebut.</p>
+<p>Babak Awal yang Menantang</p>
+<p>Sejak awal permainan, suasana kompetitif sudah terasa. Dalam babak pertama, tim Yunna dan Michael dihadapkan dengan pertanyaan-pertanyaan yang menguji wawasan umum dan pengetahuan budaya populer. Meski sempat mendapatkan tantangan dari tim lawan, kekompakan dan komunikasi yang baik di antara anggota tim berhasil membawa mereka unggul.</p>
+<p>Irfan Hakim, dengan keahliannya mencairkan suasana, tidak henti-hentinya menggoda Yunna dan Michael. “Wah, kalau strategi bisnisnya sudah kelas dunia, apakah strategi kuisnya juga sehebat itu?” canda Irfan yang disambut tawa seluruh studio. Michael dengan santai menanggapi, “Kami selalu percaya, kolaborasi adalah kuncinya, baik di bisnis maupun di kuis ini.”</p>
+<p>Aldi Taher: Faktor Hiburan yang Menghidupkan Suasana</p>
+<p>Kehadiran Aldi Taher di tim ini menjadi kejutan tersendiri. Dengan gaya khasnya yang humoris, Aldi seringkali memberikan jawaban yang mengundang tawa. Namun, di balik itu, Aldi juga membuktikan dirinya mampu memberikan kontribusi penting pada beberapa momen krusial.</p>
+<p>“Aldi ini seperti kartu joker kami,” kata Yunna sambil tertawa. “Kadang jawabannya bikin kita semua tertawa, tapi sering juga jadi penyelamat di detik-detik terakhir.”</p>
+<p>Menuju Babak Final yang Mendebarkan</p>
+<p>Setelah melewati beberapa babak yang penuh tantangan, tim Yunna, Michael, dan Aldi berhasil mengamankan posisi di babak final. Babak ini menjadi puncak dari keseruan karena pertanyaan yang diberikan semakin sulit dan membutuhkan strategi yang matang.</p>
+<p>Dalam babak ini, mereka harus menjawab pertanyaan cepat dengan skor tinggi untuk memenangkan hadiah utama. Dengan kerja sama yang apik, mereka berhasil menjawab sebagian besar pertanyaan dengan tepat. Momen paling menegangkan adalah ketika Irfan Hakim mengumumkan bahwa mereka hanya terpaut lima poin dari kemenangan. Michael dengan tenang menjawab pertanyaan terakhir yang akhirnya memastikan kemenangan mereka.</p>
+<p>Kemenangan yang Manis</p>
+<p>Sorak sorai dan tepuk tangan memenuhi studio saat Irfan Hakim mengumumkan kemenangan tim Yunna dan Michael. Tidak hanya berhasil membawa pulang hadiah utama, mereka juga mencuri hati penonton dengan chemistry yang luar biasa sebagai tim.</p>
+<p>“Ini pengalaman yang luar biasa,” ujar Yunna dalam wawancara singkat setelah acara. “Kami sangat menikmati momen ini, dan tentu saja, kemenangan ini adalah bonus yang manis.”</p>
+<p>Michael menambahkan, “Kami ingin mengucapkan terima kasih kepada tim produksi, Irfan Hakim, dan tentunya Aldi Taher yang telah membuat pengalaman ini begitu menyenangkan. Ini adalah pengingat bahwa kerja sama dan semangat adalah kunci keberhasilan dalam segala hal.”</p>
+<p>Dampak Positif di Media Sosial</p>
+<p>Setelah tayangan tersebut, nama Yunna Mercier dan Michael Mercier menjadi trending di media sosial. Banyak penggemar yang memuji kemampuan mereka menjawab pertanyaan sekaligus kehangatan yang mereka tampilkan di layar kaca. Tak sedikit pula yang memberikan apresiasi kepada Aldi Taher atas hiburan yang ia hadirkan sepanjang acara.</p>
+<p>“Saya sangat terinspirasi melihat pasangan seperti Yunna dan Michael yang bisa bekerja sama dengan baik, bahkan di luar dunia bisnis,” tulis salah satu netizen di Twitter. Komentar lain berbunyi, “Kombinasi Yunna, Michael, dan Aldi itu benar-benar bikin ngakak sekaligus kagum. Ini salah satu episode terbaik Family 100!”</p>
+<p>Kenangan yang Tak Terlupakan</p>
+<p>Partisipasi Yunna dan Michael Mercier di kuis Family 100 bukan hanya sekadar hiburan, tetapi juga menunjukkan sisi lain dari pasangan ini yang penuh kehangatan dan semangat. Momen ini menjadi bukti bahwa mereka bukan hanya sosok yang sukses di dunia profesional, tetapi juga pasangan yang inspiratif dalam kehidupan pribadi.</p>
+<p>Dengan kemenangan ini, Yunna dan Michael sekali lagi membuktikan bahwa kerja sama, komunikasi, dan semangat adalah kunci utama untuk meraih keberhasilan, baik di layar kaca maupun dalam kehidupan nyata. Pengalaman ini tentunya akan menjadi salah satu kenangan manis dalam perjalanan mereka sebagai pasangan yang penuh inspirasi.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* Grid layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0;
+  padding: 10px 285px 20px 285px;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 20px;
+      padding: 10px 0px 20px 0px;
+    }
+}
+
+/* Card Style */
+.blog-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 412px;
+    border-radius: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.03);
+}
+
+.blog-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+}
+
+.blog-category {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #111;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.blog-title {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.blog-meta {
+  font-size: 13px;
+  margin-top: 6px;
+  color: #eee;
+}
+
+/* Pagination style */
+.pagination-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.pagination {
+  display: inline-flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.page-item {
+  border-radius: 8px;
+}
+
+.page-link {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.page-item.active .page-link {
+    background-color: #ff5f9d;
+    color: #ffffff;
+    font-weight: bold;
+    border-color: #fca1cf;
+}
+
+.page-item:hover .page-link:not(.active) {
+  background-color: #e71c6a;
+}
+
+.page-item.disabled .page-link {
+  color: #ccc;
+  pointer-events: none;
+  border-color: #f0f0f0;
+}
+
+</style>
+
+<section style="padding-top: 0px; padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="container-fluid px-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                    <div class="blog-grid">
+                      <div class="blog-card" style="background-image: url('img/news/news-4.jpeg');">
+                        <div class="blog-content">
+                          <span class="blog-category">Awards</span>
+                          <h3 class="blog-title">Animate Raih Penghargaan Indonesia Best Selling Brand in E-Commerce Market 2024 dari Majalah SWA</h3>
+                          <p class="blog-meta">By Zhafirah • Juni 17, 2025</p>
+                        </div>
+                      </div>
+                      <div class="blog-card" style="background-image: url('img/news/news-3.jpg');">
+                        <div class="blog-content">
+                          <span class="blog-category">PILIHAN PARFUME</span>
+                          <h3 class="blog-title">Yakin Sudah Punya Signature Scent? Coba Dulu Parfum...</h3>
+                          <p class="blog-meta">By Minet • Juni 11, 2025</p>
+                        </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                    <div class="blog-grid">
+                      <div class="blog-card" style="background-image: url('img/news/news-2.jpg');">
+                        <div class="blog-content">
+                          <span class="blog-category">KEUNGGULAN SUNSCREEN</span>
+                          <h3 class="blog-title">Lebih dari Sekadar Pelindung: Ini Manfaat Sunscreen dan...</h3>
+                          <p class="blog-meta">By Zhafirah • Juni 13, 2025</p>
+                        </div>
+                      </div>
+                      <div class="blog-card" style="background-image: url('img/news/news-1.jpg');">
+                        <div class="blog-content">
+                          <span class="blog-category">LIP BALM</span>
+                          <h3 class="blog-title">Cara Ampuh Atasi Bibir Kering: Rawat dengan Scarlett...</h3>
+                          <p class="blog-meta">By Minet • Juni 11, 2025</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Pagination -->
+<div class="pagination-container">
+      <ul class="pagination">
+        <!-- <li class="page-item disabled">
+          <a href="#" class="page-link">←</a>
+        </li> -->
+        <li class="page-item active">
+          <a href="awards.html" class="page-link">Show More</a>
+        </li>
+        <!-- <li class="page-item">
+          <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">3</a>
+        </li> -->
+        <!-- <li class="page-item disabled">
+          <a href="#" class="page-link">→</a>
+        </li> -->
+      </ul>
+    </div>
+</section>
+
+<style>
+  .position-relative img {
+    transition: transform 0.3s ease;
+  }
+  .position-relative:hover img {
+    transform: scale(1.05);
+  }
+</style>
+
+
+
+<!-- Start Footer -->
+    <footer class="bg-white" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success  pb-3  logo"><img width="200" src="img/b_animate_white.png" style="filter: invert();"> </h2>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Serum Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Whitening Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Barier Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Acne Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Anti Aging Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Dark Spot Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Microbiosme Series</a></li>
+                    </ul>
+                </div>
+
+                 <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Education</a></li>
+                        <li><a class="text-decoration-none" href="#">Awards</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-dark mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top "></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://twitter.com/"><i><img width="30" style="position: relative; bottom: 3px;" src="img/icon/shopee.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i><img width="18" style="position: relative; bottom: 3px;" src="img/icon/tokopedia.png" ></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-white py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-dark">
+                            Copyright &copy; 2025 Animate By Yunna Mercier
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll('.custom-dropdown-toggle');
+
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const parent = this.closest('.custom-dropdown-vertical');
+            parent.classList.toggle('open');
+          });
+        });
+      });
+    </script>
+
+
+</body>
+
+</html>
