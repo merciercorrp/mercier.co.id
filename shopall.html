@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animate By Yunna Mercier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="img/animate_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo-bulet.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: background: #ff5f9d;
+            width: 20px;
+            border-radius: 0px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: #ff5f9d;
+        }
+
+        /*.swiper-pagination-bullet {
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+            display: inline-block;
+            border-radius: 0px;
+            background: #fd7fae;
+            opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+        }*/
+
+        .swiper-pagination-bullet {
+            border-radius: 0px;
+            width: 50px;
+            height: 5px;
+        }
+
+        .custom-dropdown-vertical .toggle-icon {
+          float: right;
+          transition: transform 0.3s ease;
+        }
+
+        .custom-dropdown-vertical.open .toggle-icon {
+          transform: rotate(180deg);
+        }
+
+        .custom-dropdown-menu {
+          display: none;
+          margin: 0;
+          padding-left: 1rem;
+        }
+
+        .custom-dropdown-vertical.open .custom-dropdown-menu {
+          display: block;
+        }
+
+        /* Optional: spacing between items */
+        .dropdown-item {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+
+        .custom-dropdown-menu {
+          list-style: none; /* HILANGKAN BULLET */
+          padding-left: 1rem; /* jika ingin ada jarak ke kiri */
+          margin: 0;
+        }
+
+        .logobyAnimate {
+            font-size: 28px !important;
+            padding-bottom: 0px !important;
+            position: absolute;
+            left: 2%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logobyAnimate {
+                font-size: 28px !important;
+                padding-bottom: 0px !important;
+                position: absolute;
+                left: 36%;
+            }
+        }
+    </style>
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="position: fixed; width: 100%; z-index: 999; background: white;">
+        <div class=" d-flex align-items-left">
+            <a class="navbar-brand text-success logo h1 align-self-center" style=" font-size: 28px !important; padding-bottom: 0px !important; position: absolute; left: 2%;" href="index.html">
+                <img class="imgWidth" style="width: 128px;" src="img/b_animate.png">
+            </a>
+        </div>
+         <div class="container d-flex justify-content-between align-items-center" style="padding-bottom: 10px;padding-top: 10px;">
+            <!-- 
+        <a class="navbar-brand text-success logo h1 align-self-center" style="font-size: 28px !important; padding-bottom: 0px !important; " href="index.html">
+            <img class="imgWidth" style="width: 114px;" src="img/b_animate.png">
+        </a> -->
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+
+                    <!-- SHOP ALL MEGA MENU -->
+                    <li class="nav-item dropdown position-static" data-bs-auto-close="outside">
+                         <div class="d-flex align-items-center">
+                            <a href="shopall.html" class="nav-link pe-1" style="padding-right: 0px !important;">
+                                SHOP
+                            </a>
+                            <a class="nav-link dropdown-toggle ps-1" href="#" id="megaDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+
+                            <div class="dropdown-menu w-100 mt-0 border-0 shadow" aria-labelledby="megaDropdown" style="left: 0; right: 0; background-color: #fef7ff;">
+                                <div class="container py-4">
+                                    <div class="row">
+                                       
+
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Face</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Serum Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Whitening Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Barrier Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Anti Aging Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Dark Spot Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Microbiosme Series</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Lip</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Lip Series</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Parfum -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Body</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Body Care</a></li>
+                                                <li><a class="dropdown-item" href="#">Moisturizer</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Bundling -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Bundling</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Bundling</a></li>
+                                                <li><a class="dropdown-item" href="#">5 IN 1 Series</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">New Product</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">New Product</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Hair -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Best Seller</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Best Seller</a></li>
+                                            </ul>
+                                        </div>
+
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                </a>
+                <!-- <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                </a>
+                <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                </a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Content -->
+    <div class="container py-5" >
+        <div class="row" style="margin-top: 80px;">
+
+            <div class="col-lg-3">
+                
+
+                <h1 class="h2 pb-4">Rokomendasi Produk</h1>
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Jerawat
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="#">Men</a></li>
+                            <li><a class="text-decoration-none" href="#">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Berminyak
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="#">Dark SPot Serieso<=/a></li>
+                        </ul>
+
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Kering
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="#">Bag</a></li>
+                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
+                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline shop-top-menu pb-3 pt-1">
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Men's</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none" href="#">Women's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 pb-4">
+                        <div class="d-flex">
+                            <select class="form-control">
+                                <option>Featured</option>
+                                <option>A to Z</option>
+                                <option>Item</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                  <style>
+    /* ===== CSS Khusus Kartu Produk ===== */
+    .product-card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      background: #fff;
+      transition: box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .discount-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ff4d88;
+      color: white;
+      font-size: 14px;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .product-title {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .price {
+      color: #f14d54;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    .marketplace-icons img {
+      width: 30px;
+      margin: 5px;
+    }
+
+    .product-image {
+      max-height: 220px;
+      object-fit: contain;
+    }
+  </style>
+
+  <style>
+  .circle-button-group {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    gap: 10px;               /* Jarak antar tombol */
+    margin-top: 10px;        /* Jarak dari elemen atasnya */
+    flex-wrap: wrap;
+  }
+
+  .circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .circle-btn .imgShopee {
+    width: 73%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .circle-btn .imgTokopedia {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .circle-btn {
+      width: 40px;
+      height: 40px;
+    }
+
+    .circle-btn .imgShopee {
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+      }
+
+    .circle-btn .imgTokopedia {
+        width: 60%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .circle-btn img {
+      width: 55%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .circle-btn {
+      width: 36px;
+      height: 36px;
+    }
+
+    .circle-btn .imgShopee {
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+      }
+
+    .circle-btn .imgTokopedia {
+        width: 60%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .circle-btn img {
+      width: 50%;
+    }
+  }
+</style>
+
+<div class="row"><!-- ===== SECTION: Produk Animate ===== -->
+<section id="produk-animate">
+  <div class="container">
+    
+    <div class="row g-4">
+      <!-- Ulangi 12 produk total (3 baris × 4 kolom) -->
+
+      <!-- ===== PRODUK 1 ===== -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-card">
+          <div class="discount-badge">20%</div>
+          <img src="img/bestseller/bs-4.webp" alt="Parfum 1" class="img-fluid product-image">
+          <div class="product-title">Parfum 1</div>
+          <div>
+            <span class="price">Rp64.500</span>
+            <span class="old-price">Rp75.000</span>
+          </div>
+          <div class="circle-button-group">
+                      <button class="circle-btn love-btn" style="background: #ea501f">
+                      <img class="imgShopee" src="img/market/shopee.png" alt="shopee">
+                    </button>
+                    <button class="circle-btn cart-btn" style="background: #4e9c4d">
+                      <img class="imgTokopedia" src="img/market/tokopedia.png" alt="tokopedia">
+                    </button>
+                   </div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 2–12 ===== -->
+      <!-- Salin struktur di atas dan ubah judul, harga, dan diskon sesuai kebutuhan -->
+      <!-- PRODUK 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-card">
+          <div class="discount-badge">9%</div>
+          <img src="img/bestseller/bs-4.webp" alt="Face Wash" class="img-fluid product-image">
+          <div class="product-title">Face Wash</div>
+          <div>
+            <span class="price">Rp60.000</span>
+            <span class="old-price">Rp75.000</span>
+          </div>
+          <div class="circle-button-group">
+                      <button class="circle-btn love-btn" style="background: #ea501f">
+                      <img class="imgShopee" src="img/market/shopee.png" alt="shopee">
+                    </button>
+                    <button class="circle-btn cart-btn" style="background: #4e9c4d">
+                      <img class="imgTokopedia" src="img/market/tokopedia.png" alt="tokopedia">
+                    </button>
+                   </div>
+        </div>
+      </div>
+
+      <!-- PRODUK 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-card">
+          <div class="discount-badge">15%</div>
+          <img src="img/bestseller/bs-4.webp" alt="Body Lotion" class="img-fluid product-image">
+          <div class="product-title">Body Lotion</div>
+          <div>
+            <span class="price">Rp65.000</span>
+            <span class="old-price">Rp80.000</span>
+          </div>
+          <div class="circle-button-group">
+                      <button class="circle-btn love-btn" style="background: #ea501f">
+                      <img class="imgShopee" src="img/market/shopee.png" alt="shopee">
+                    </button>
+                    <button class="circle-btn cart-btn" style="background: #4e9c4d">
+                      <img class="imgTokopedia" src="img/market/tokopedia.png" alt="tokopedia">
+                    </button>
+                   </div>
+        </div>
+      </div>
+
+      <!-- PRODUK 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-card">
+          <div class="discount-badge">50%</div>
+          <img src="img/bestseller/bs-4.webp" alt="Perfume Red" class="img-fluid product-image">
+          <div class="product-title">Perfume Red</div>
+          <div>
+            <span class="price">Rp45.000</span>
+            <span class="old-price">Rp90.000</span>
+          </div>
+          <div class="circle-button-group">
+                      <button class="circle-btn love-btn" style="background: #ea501f">
+                      <img class="imgShopee" src="img/market/shopee.png" alt="shopee">
+                    </button>
+                    <button class="circle-btn cart-btn" style="background: #4e9c4d">
+                      <img class="imgTokopedia" src="img/market/tokopedia.png" alt="tokopedia">
+                    </button>
+                   </div>
+        </div>
+      </div>
+
+      <!-- PRODUK 5–12 (SALIN & MODIFIKASI) -->
+      <!-- PRODUK 5 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-card">
+          <div class="discount-badge">30%</div>
+          <img src="img/bestseller/bs-4.webp" alt="Serum Bright" class="img-fluid product-image">
+          <div class="product-title">Serum Bright</div>
+          <div>
+            <span class="price">Rp70.000</span>
+            <span class="old-price">Rp100.000</span>
+          </div>
+          <div class="circle-button-group">
+                      <button class="circle-btn love-btn" style="background: #ea501f">
+                      <img class="imgShopee" src="img/market/shopee.png" alt="shopee">
+                    </button>
+                    <button class="circle-btn cart-btn" style="background: #4e9c4d">
+                      <img class="imgTokopedia" src="img/market/tokopedia.png" alt="tokopedia">
+                    </button>
+                   </div>
+        </div>
+      </div>
+
+      <!-- Tambahkan hingga produk ke-12 sesuai kebutuhan -->
+      <!-- Anda cukup menyalin 1 blok produk dan mengganti isi masing-masing -->
+
+    </div>
+  </div>
+</section>
+<!-- ===== END SECTION ===== -->
+                </div>
+                <div div="row">
+                    <ul class="pagination pagination-lg justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#" tabindex="-1">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+    
+
+    <!-- Start Footer -->
+    <footer class="bg-white" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success  pb-3  logo"><img width="200" src="img/b_animate_white.png" style="filter: invert();"> </h2>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <!-- <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Serum Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Whitening Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Barier Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Acne Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Anti Aging Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Dark Spot Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Microbiosme Series</a></li>
+                    </ul>
+                </div>
+
+                 <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Education</a></li>
+                        <li><a class="text-decoration-none" href="#">Awards</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-dark mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top "></div>
+                </div>
+                <div class="col-auto me-auto">
+                </div>
+                <div class="col-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://tiktok.com/@animateofficiall.id"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/animateofficial.id/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://shopee.co.id/animateofficial.id"><i><img width="30" style="position: relative; bottom: 3px; opacity: 0.8;" src="img/icon/shopee.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://tokopedia.com/animateofficial/"><i><img width="18" style="position: relative; bottom: 3px;" src="img/icon/tokopedia.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://api.whatsapp.com/message/RXKG4ID3HL3YH1?autoload=1&app_absent=0"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-white py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-dark">
+                            Copyright &copy; 2025 Animate By Yunna Mercier
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll('.custom-dropdown-toggle');
+
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const parent = this.closest('.custom-dropdown-vertical');
+            parent.classList.toggle('open');
+          });
+        });
+      });
+    </script>
+
+
+</body>
+
+</html>
