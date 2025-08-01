@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animate By Yunna Mercier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="img/animate_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo-bulet.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: background: #ff5f9d;
+            width: 20px;
+            border-radius: 0px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: #ff5f9d;
+        }
+
+        /*.swiper-pagination-bullet {
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+            display: inline-block;
+            border-radius: 0px;
+            background: #fd7fae;
+            opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+        }*/
+
+        .swiper-pagination-bullet {
+            border-radius: 0px;
+            width: 50px;
+            height: 5px;
+        }
+
+        .custom-dropdown-vertical .toggle-icon {
+          float: right;
+          transition: transform 0.3s ease;
+        }
+
+        .custom-dropdown-vertical.open .toggle-icon {
+          transform: rotate(180deg);
+        }
+
+        .custom-dropdown-menu {
+          display: none;
+          margin: 0;
+          padding-left: 1rem;
+        }
+
+        .custom-dropdown-vertical.open .custom-dropdown-menu {
+          display: block;
+        }
+
+        /* Optional: spacing between items */
+        .dropdown-item {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+
+        .custom-dropdown-menu {
+          list-style: none; /* HILANGKAN BULLET */
+          padding-left: 1rem; /* jika ingin ada jarak ke kiri */
+          margin: 0;
+        }
+
+        .navAnimate{
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logobyAnimate {
+                font-size: 28px !important;
+                padding-bottom: 0px !important;
+                position: absolute;
+                left: 31%;
+            }
+
+            .navAnimate{
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 31px;
+            
+            }
+        }
+
+        .nav-item.dropdown .dropdown-toggle {
+            padding-top: 0.6rem !important;
+            padding-bottom: 0.6rem !important;
+            font-size: 0.7rem; /* kecilkan panah */
+        }
+
+    </style>
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" style="position: fixed; width: 100%; z-index: 999; background: white; padding-top: .1rem !important;
+    padding-bottom: .1rem !important;">
+        
+        <div class="container d-flex justify-content-between align-items-center navAnimate">
+        <div class=" d-flex align-items-left">
+            <a class="navbar-brand text-success logo h1 align-self-center logobyAnimate"  href="index.html">
+                <img class="imgWidth" style="width: 128px;" src="img/b_animate.png">
+            </a>
+        </div>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+
+                    <!-- SHOP ALL MEGA MENU -->
+                    <li class="nav-item dropdown position-static" data-bs-auto-close="outside">
+                         <div class="d-flex align-items-center">
+                            <a href="shopall.html" class="nav-link pe-1" style="padding-right: 0px !important;">
+                                SHOP
+                            </a>
+                            <a class="nav-link dropdown-toggle ps-1" href="#" id="megaDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+
+                            <div class="dropdown-menu w-100 mt-0 border-0 shadow" aria-labelledby="megaDropdown" style="left: 0; right: 0; background-color: #fef7ff;">
+                                <div class="container py-4">
+                                    <div class="row">
+                                       
+
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Face</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Serum Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Whitening Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Barrier Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Acne Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Anti Aging Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Dark Spot Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Microbiosme Series</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Body -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Lip</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Lip Series</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Parfum -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Body</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Body Care</a></li>
+                                                <li><a class="dropdown-item" href="#">Moisturizer</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Bundling -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Bundling</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Bundling</a></li>
+                                                <li><a class="dropdown-item" href="#">5 IN 1 Series</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">New Product</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">New Product</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Hair -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Best Seller</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Best Seller</a></li>
+                                            </ul>
+                                        </div>
+
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="affiliate.html">AFFILIATE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-3 col-11 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                </a>
+                <!-- <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                </a>
+                <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                </a> -->
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Cegah semua isi dropdown agar tidak menutup dropdown utama
+    document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+      menu.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    });
+
+    // Toggle submenu (Facial Wash) secara manual
+    document.querySelectorAll('.dropdown.dropend .dropdown-toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Hindari reload #
+        e.stopPropagation();
+
+        const submenu = this.nextElementSibling;
+        if (submenu && submenu.classList.contains('dropdown-menu')) {
+          // Tutup dropdown lain jika terbuka
+          document.querySelectorAll('.dropdown-menu.show').forEach(function (openMenu) {
+            if (openMenu !== submenu) {
+              openMenu.classList.remove('show');
+            }
+          });
+
+          submenu.classList.toggle('show');
+        }
+      });
+    });
+  });
+</script>
+
+
+
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+      <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiperSlider img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bannerAnimate{
+        height: 720px;
+    }
+
+     @media (max-width: 768px) {
+        .bannerAnimate{
+            height: 228px;
+            padding-top: 60px;
+        }
+     }
+
+
+  </style>
+
+
+
+    <!-- Start Banner Hero -->
+    <section class="banner">
+    <div id="template-mo-zay-hero-carousel" class="carousel slide bannerAnimate" data-bs-ride="carousel" >
+        <div class="swiper mySwiperSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiperSlider" style="background-image: url('img/back/BANNER-cushion.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center"></div>
+              <div class="swiper-slide swiperSlider" style="background-image: url('img/back/BANNER-LIP-TINT.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center"></div>
+              
+            </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    </section>
+
+    <script>
+      var swiperSlider = new Swiper(".mySwiperSlider", {
+        speed: 2500, // kecepatan transisi antar slide dalam milidetik (1000ms = 1 detik)
+        loop: true,  // agar slide terus berputar
+        autoplay: {
+          delay: 2300, // waktu tunggu sebelum slide pindah (3000ms = 3 detik)
+          disableOnInteraction: false, // tetap autoplay meskipun user menggeser manual
+        },
+        pagination: {
+          el: ".mySwiperSlider .swiper-pagination",
+          clickable: true,
+        },
+     
+      });
+</script>
+    <!-- End Banner Hero -->
+
+    <style>
+          .btn-affiliator {
+            font-size: 1.2rem !important;
+            font-weight: bold !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-transform: uppercase;
+            background-color: #fa4ea4 !important;
+            border-color: #efd5c6 !important;
+            color: white;
+          }
+
+          .btn-affiliator:hover {
+            background-color: white !important;
+            border-color: #fa4ea4 !important;
+            color: black;
+          }
+
+          @media (max-width: 576px) {
+            .btn-affiliator {
+              font-size: 1rem;
+              padding: 0.6rem 1rem;
+            }
+          }
+        </style>
+
+      <div class="d-flex justify-content-center align-items-center pt-5 pb-5">
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-affiliator">
+            <i class="fab fa-whatsapp me-2"></i> JOIN US AFFILIATOR
+          </a>
+      </div>
+
+    
+
+    <style>
+  .swiperSahabatWrapper {
+    height: 312px;
+  }
+
+  .swiperSahabatWrapper .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    width: 210px !important;
+    height: 100%;
+    position: relative;
+  }
+
+  .swiperSahabatWrapper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/75/Black_Play_Button.png"); /* ikon play */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .sahabat-title {
+    font-weight: bold !important;
+    font-size: 36px !important;
+    margin-bottom: 10px !important;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+
+  .sahabat-title span {
+    color: #ec4899;
+  }
+
+  .sahabat-desc {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: right !important;
+  }
+
+  .sectionSahabat{
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-left: 150px;
+    padding-right: 150px;
+   }
+
+        @media only screen and (max-width: 600px) {
+            .sectionSahabat {
+                padding-top: 0px;
+                padding-bottom: 50px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+</style>
+
+<section class="sectionSahabat">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="swiper swiperSahabatWrapper mySwiperSahabat">
+          <div class="swiper-wrapper">
+            <!-- SLIDES -->
+            <div class="swiper-slide" style="background-image: url('img/sahabat/mnndd_.jpg');">
+                <a href="https://www.instagram.com/reel/DL4Sq0opcqJ/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Nanadmardiiii.jpg');">
+                <a href="https://www.instagram.com/reel/DKWH4tNJu44/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Naylaaribbiell_.jpg');">
+                <a href="https://www.instagram.com/reel/DLEQauLJMK7/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Nuruladds.jpg');">
+                <a href="https://www.instagram.com/reel/DMJ_lM5pHkA/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Rahmazrh.jpg');">
+                <a href="https://www.instagram.com/reel/DL4Sq0opcqJ/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Tikaatikahh.jpg');">
+                <a href="https://www.instagram.com/reel/DL9l1hiSTkJ/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/mnndd_.jpg');">
+                <a href="https://www.instagram.com/reel/DL4Sq0opcqJ/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Nanadmardiiii.jpg');">
+                <a href="https://www.instagram.com/reel/DKWH4tNJu44/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Naylaaribbiell_.jpg');">
+                <a href="https://www.instagram.com/reel/DLEQauLJMK7/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Nuruladds.jpg');">
+                <a href="https://www.instagram.com/reel/DMJ_lM5pHkA/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Rahmazrh.jpg');">
+                <a href="https://www.instagram.com/reel/DL4Sq0opcqJ/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/sahabat/Tikaatikahh.jpg');">
+                <a href="https://www.instagram.com/reel/DL9l1hiSTkJ/" target="_blank" style="display: block; width: 100%; height: 100%;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+
+      <style>
+  .text-purple {
+      color: #ff5f9d !important;
+    }
+
+    .ecosystem-section h1 {
+      font-size: 2.5rem;
+    }
+
+    img.rounded-4 {
+      border-radius: 1rem;
+    }
+
+    .ceo-section {
+      background-color: #f8f3fc;
+    }
+
+    .text-purple {
+      color: #ff5f9d !important;
+    }
+
+    .rounded-4 {
+      border-radius: 1rem;
+    }
+
+    .quote-section {
+      background-color: #ffffff;
+    }
+
+    .quote-text {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #8224e3; /* ungu Animate */
+    }
+
+    .journey-section {
+      background-color: #ffffff;
+    }
+
+    .text-purple {
+      color: #8224e3;
+    }
+
+    .journey-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+
+  </style>
+
+    <!-- <section class="quote-section py-5 text-center">
+      <div class="container">
+        <blockquote class="quote-text fw-semibold fst-italic text-purple">
+          “Animate adalah brand kecantikan yang berfokus pada inovasi, kualitas, dan keberlanjutan. Kami menawarkan produk skincare premium, layanan klinik kecantikan profesional, serta manufaktur kosmetik. Kami meyakini bahwa setiap ide inovatif dan pendekatan berbasis solusi dapat menginspirasi serta membuka peluang menuju masa depan yang lebih baik. Bergabunglah sebagai afiliator dan jadilah bagian dari perjalanan mewujudkan impian wanita Indonesia melalui kecantikan yang bertanggung jawab.”
+        </blockquote>
+      </div>
+    </section> -->
+
+
+
+<script>
+const swiperSahabat = new Swiper('.mySwiperSahabat', {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 4000,
+  allowTouchMove: false,
+  grabCursor: true
+});
+</script>
+
+    <!-- END Section Sahabat -->
+
+<!-- Start Footer -->
+    <footer class="bg-white" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success  pb-3  logo"><img width="200" src="img/b_animate_white.png" style="filter: invert();"> </h2>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <!-- <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Products</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Serum Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Whitening Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Barier Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Acne Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Anti Aging Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Dark Spot Series</a></li>
+                        <li><a class="text-decoration-none" href="#">Microbiosme Series</a></li>
+                    </ul>
+                </div>
+
+                 <div class="col-md-4 pt-5">
+                    <h4 class="h5 text-dark  pb-3 " style="font-weight: bold">Further Info</h4>
+                    <ul class="list-unstyled text-dark footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Education</a></li>
+                        <li><a class="text-decoration-none" href="#">Awards</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#">Affiliate</a></li>
+                    </ul>
+                </div>  
+
+            </div>
+
+            <div class="row text-dark mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top "></div>
+                </div>
+                <div class="col-auto me-auto">
+                </div>
+                <div class="col-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://tiktok.com/@animateofficiall.id"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://www.instagram.com/animateofficial.id/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://shopee.co.id/animateofficial.id"><i><img width="30" style="position: relative; bottom: 3px; opacity: 0.8;" src="img/icon/shopee.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="http://tokopedia.com/animateofficial/"><i><img width="18" style="position: relative; bottom: 3px;" src="img/icon/tokopedia.png" ></i></a>
+                        </li>
+                        <li class="list-inline-item border  rounded-circle text-center">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://api.whatsapp.com/message/RXKG4ID3HL3YH1?autoload=1&app_absent=0"><i class="fab fa-whatsapp fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-white py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-dark">
+                            Copyright &copy; 2025 Animate By Yunna Mercier
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+    
+</body>
+
+</html>
